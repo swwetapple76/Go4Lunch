@@ -54,7 +54,7 @@ public class workmatesListFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_workmates_list_list, container, false);
+        View view = inflater.inflate(R.layout.fragment_workmates, container, false);
 
         // Set the adapter
         if (view instanceof RecyclerView) {

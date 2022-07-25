@@ -7,12 +7,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.lwt.go4lunch.databinding.FragmentListViewBinding;
 
 public class ListViewFragment extends Fragment{
 
 
-    private FragmentListViewBinding binding;
+    private FragmentListView binding;
 
 
     @Override

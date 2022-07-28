@@ -14,7 +14,7 @@
         android:id="@+id/workmatesFragment"
         android:name="com.lwt.go4lunch.ui.Fragment.WorkmatesFragment"
         android:label="fragment_workmates"
-        tools:layout="@layout/workmates_element" />
+        tools:layout="@layout/workmate_list_item" />
     <fragment
         android:id="@+id/listViewFragment"
         android:name="com.lwt.go4lunch.ui.Fragment.ListViewFragment"

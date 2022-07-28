@@ -10,5 +10,4 @@
     android:layout_marginRight="16dp"
     app:layoutManager="LinearLayoutManager"
     tools:context=".ui.Fragment.ListViewFragment"
-    tools:listitem="@layout/list_view_element"
-    tools:viewBindingIgnore="true"/>
+    tools:listitem="@layout/list_view_element" />

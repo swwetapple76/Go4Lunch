@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Toast;
 
 import androidx.annotation.Nullable;
+import androidx.appcompat.widget.Toolbar;
 
 import com.firebase.ui.auth.AuthUI;
 import com.firebase.ui.auth.IdpResponse;
@@ -39,6 +40,13 @@ public class LoginActivity extends BaseActivity<ActivityLoginBinding> {
         startLoginActivity();
     }
 }
+
+    @Nullable
+    @Override
+    protected Toolbar getToolbar() {
+        return null;
+    }
+
     private void startLoginActivity(){
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);

@@ -8,7 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.lwt.go4lunch.databinding.FragmentWorkmatesBinding;
-import com.lwt.go4lunch.databinding.FragmentWorkmatesListBinding;
+
 
 
 public class WorkmatesFragment extends Fragment {

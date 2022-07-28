@@ -7,6 +7,7 @@ import android.widget.TextView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.lwt.go4lunch.databinding.FragmentListViewBinding;
+import com.lwt.go4lunch.databinding.ListViewElementBinding;
 import com.lwt.go4lunch.ui.Fragment.placeholder.PlaceholderContent.PlaceholderItem;
 
 import java.util.List;
@@ -26,7 +27,7 @@ public class RestaurantListAdapter extends RecyclerView.Adapter<RestaurantListAd
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
 
-        return new ViewHolder(FragmentListViewBinding.inflate(LayoutInflater.from(parent.getContext()), parent, false));
+        return new ViewHolder(ListViewElementBinding.inflate(LayoutInflater.from(parent.getContext()), parent, false));
 
     }
 
@@ -47,7 +48,7 @@ public class RestaurantListAdapter extends RecyclerView.Adapter<RestaurantListAd
         public final TextView mContentView;
         public PlaceholderItem mItem;
 
-        public ViewHolder(FragmentListViewBinding binding) {
+        public ViewHolder(ListViewElementBinding binding) {
             super(binding.getRoot());
             mIdView = binding.restaurantName;
             mContentView = binding.numberOfWorkmatesThere;

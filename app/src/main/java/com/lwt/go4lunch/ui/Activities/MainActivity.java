@@ -1,32 +1,26 @@
 package com.lwt.go4lunch.ui.Activities;
 
 import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
+import androidx.annotation.Nullable;
+import androidx.appcompat.widget.PopupMenu;
 import androidx.appcompat.widget.SearchView;
+import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
-import android.app.AlertDialog;
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.MenuItem;
-
-import com.firebase.ui.auth.AuthUI;
-import com.google.android.gms.maps.GoogleMap;
-import com.google.android.gms.maps.OnMapReadyCallback;
-import com.google.android.gms.maps.model.LatLng;
-import com.google.android.gms.maps.model.MarkerOptions;
+import android.view.View;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
-import com.google.android.material.navigation.NavigationBarView;
 import com.lwt.go4lunch.R;
-import com.lwt.go4lunch.databinding.ActivityLoginBinding;
 import com.lwt.go4lunch.databinding.ActivityMainBinding;
 import com.lwt.go4lunch.ui.Fragment.ListViewFragment;
 import com.lwt.go4lunch.ui.Fragment.MapsFragment;
 import com.lwt.go4lunch.ui.Fragment.WorkmatesFragment;
 
-public class MainActivity extends BaseActivity<ActivityMainBinding>  {
+public class MainActivity extends BaseActivity<ActivityMainBinding> implements PopupMenu.OnMenuItemClickListener {
 
     private BottomNavigationView bottomNavigationView;
     @Override
@@ -42,7 +36,14 @@ public class MainActivity extends BaseActivity<ActivityMainBinding>  {
         //Bottom Bar
          BottomNavigationView bottomNavigationView = findViewById(R.id.activity_main_bottom_navigation);
          bottomNavigationView.setOnItemSelectedListener(mOnNavigationItemSelectedListener);
-                    }
+
+                          }
+
+    @Nullable
+    @Override
+    protected Toolbar getToolbar() {
+        return null;
+    }
 
     private BottomNavigationView.OnItemSelectedListener mOnNavigationItemSelectedListener
             = new BottomNavigationView.OnItemSelectedListener() {
@@ -78,7 +79,6 @@ public class MainActivity extends BaseActivity<ActivityMainBinding>  {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu_main, menu);
-
         MenuItem searchItem = menu.findItem(R.id.action_search);
         SearchView searchView =
                 (SearchView) searchItem.getActionView();
@@ -105,4 +105,50 @@ public class MainActivity extends BaseActivity<ActivityMainBinding>  {
         }
     }
 
+    public void showPopup(View v) {
+        PopupMenu popup = new PopupMenu(this, v);
+        MenuInflater inflater = popup.getMenuInflater();
+        inflater.inflate(R.menu.drawer_menu, popup.getMenu());
+        popup.show();
+    }
+
+    public void showMenu(View v) {
+        PopupMenu popup = new PopupMenu(this, v);
+
+        // This activity implements OnMenuItemClickListener
+        popup.setOnMenuItemClickListener(this);
+        popup.inflate(R.menu.drawer_menu);
+        popup.show();
+    }
+
+    @Override
+    public boolean onMenuItemClick(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.nav_lunch:
+                lunch(item);
+                return true;
+            case R.id.nav_settings:
+                setting(item);
+                return true;
+            case R.id.logout:
+                logout(item);
+                return true;
+            default:
+                return false;
+        }
+    }
+
+    private void logout(MenuItem item) {
+    }
+
+    private void setting(MenuItem item) {
+    }
+
+    private void lunch(MenuItem item) {
+    }
+
+    @Override
+    public void onPointerCaptureChanged(boolean hasCapture) {
+        super.onPointerCaptureChanged(hasCapture);
+    }
 }

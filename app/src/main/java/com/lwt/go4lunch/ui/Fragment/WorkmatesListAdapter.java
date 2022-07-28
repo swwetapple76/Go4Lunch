@@ -6,7 +6,7 @@ import android.view.LayoutInflater;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.lwt.go4lunch.databinding.FragmentWorkmatesListBinding;
+import com.lwt.go4lunch.databinding.WorkmateListItemBinding;
 import com.lwt.go4lunch.ui.Fragment.placeholder.PlaceholderContent.PlaceholderItem;
 
 
@@ -27,7 +27,7 @@ public class WorkmatesListAdapter extends RecyclerView.Adapter<WorkmatesListAdap
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
 
-        return new ViewHolder(FragmentWorkmatesListBinding.inflate(LayoutInflater.from(parent.getContext()), parent, false));
+        return new ViewHolder(WorkmateListItemBinding.inflate(LayoutInflater.from(parent.getContext()), parent, false));
 
     }
 
@@ -48,7 +48,7 @@ public class WorkmatesListAdapter extends RecyclerView.Adapter<WorkmatesListAdap
         public final TextView mContentView;
         public PlaceholderItem mItem;
 
-        public ViewHolder(FragmentWorkmatesListBinding binding) {
+        public ViewHolder(WorkmateListItemBinding binding) {
             super(binding.getRoot());
             mIdView = binding.itemTitle;
             mContentView = binding.choseRestaurantName;

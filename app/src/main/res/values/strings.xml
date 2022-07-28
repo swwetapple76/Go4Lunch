@@ -21,18 +21,17 @@
     <string name="button_login_text_not_logged">Connexion</string>
 
     <!-- LOGIN ACTIVITY -->
-    <string name="toolbar_title_login_activity">Votre Profil</string>
-    <string name="text_input_username">Nom d\'utilisateur</string>
-    <string name="text_view_email">Adresse email :</string>
-    <string name="button_update_account">Mettre à jour le nom d\'utilisateur</string>
-    <string name="button_delete_account">Supprimer mon compte</string>
-    <string name="button_sign_out_account">Déconnexion</string>
-    <string name="info_no_email_found">Aucune adresse email</string>
-    <string name="info_no_username_found">Aucun nom d\'utilisateur</string>
-    <string name="popup_message_confirmation_delete_account">Es-tu sûr(e) de vouloir supprimer ton compte ?</string>
-    <string name="popup_message_choice_yes">Oui !</string>
-    <string name="popup_message_choice_no">Non</string>
-    <string name="check_box_is_mentor">Etes-vous un mentor ?</string>
+    <string name="toolbar_title_login_activity">Your profile</string>
+    <string name="text_input_username">Username</string>
+    <string name="text_view_email">E-mail address:</string>
+    <string name="button_update_account">Update username</string>
+    <string name="button_delete_account">Delete my account</string>
+    <string name="button_sign_out_account">Logout</string>
+    <string name="info_no_email_found">No email address had been register </string>
+    <string name="info_no_username_found">No username had been register </string>
+    <string name="popup_message_confirmation_delete_account">Are you sure you want to delete your account?</string>
+    <string name="popup_message_choice_yes">Yes!</string>
+    <string name="popup_message_choice_no">No </string>
 
     <!-- Facebook login-->
     <string name="facebook_application_id">545622527093272</string>
@@ -84,5 +83,100 @@
     <string name="workplace_required_message">Select your workplace to see you workmates</string>
     <string name="action_settings">Setting</string>
     <string name="action_menu">Menu</string>
+    <string name="menu_button">Menu</string>
+    <string name="descr_overflow_button">Menu</string>
+    <string name="your_lunch">Your Lunch</string>
+    <string name="settings">SETTINGS</string>
+    <string name="logout">LOGOUT</string>
+
+    <!-- Sync Preferences -->
+    <string name="enable_notification">Enable notifications</string>
+    <string name="enable_location">Enable geolocation</string>
+    <string name="define_map_zoom">Define map zoom</string>
+    <string name="zoom_level">" zoom level"</string>
+    <string name="define_your_radius_search">Define your radius restaurant search</string>
+    <string name="meters_radius">" meters radius search restaurant"</string>
+    <string name="notification_header">Notification</string>
+    <string name="set_notification_rules">Set notifications configuration</string>
+    <string name="map_settings">Map settings</string>
+    <string name="define_map_settings">Define your own map settings</string>
+    <string name="define_establishment">Define your establishment type search</string>
+    <string name="define_favorite_map_radius">Define your favorite default map radius search</string>
+    <string name="define_favorite_type">Define your favorite establishment type search</string>
+    <string name="array_high">High</string>
+    <string name="array_medium">Medium</string>
+    <string name="array_less">Less</string>
+    <string name="array_default">Default</string>
+    <string name="array_radius_5000">Radius 5000 m</string>
+    <string name="array_radius_3000">Radius 3000 m</string>
+    <string name="array_radius_2000">Radius 2000 m</string>
+    <string name="array_radius_1000">Radius 1000 m</string>
+    <string name="array_radius_500">Radius 500 m</string>
+    <string name="array_type_resto">restaurant</string>
+    <string name="array_type_bar">bar</string>
+    <string name="array_type_hotel">hotel</string>
+    <string name="array_type_cafe">cafe</string>
+    <string name="array_type_food">food</string>
+
+    <!-- Detail activity -->
+    <string name="call">CALL</string>
+    <string name="like">LIKE</string>
+    <string name="web_site">WEB SITE</string>
+    <string name="favorite_restaurant_message">Restaurant added to your favorite list</string>
+    <string name="dislike">Dislike</string>
+    <string name="chosen_restaurant">You have chosen this restaurant</string>
+    <string name="no_telephone_number_for_this_restaurant">No telephone number for this restaurant</string>
+    <string name="no_website_for_restaurant">No website for this restaurant</string>
+
+    <!-- restaurant favorite activity -->
+    <string name="favorites_restaurant">My Favorites Restaurants</string>
+    <string name="your_favorite_restaurants">Your favorite restaurants</string>
+    <string name="restaurant_delete">Restaurant delete to your favorite list</string>
+    <string name="you_haven_t_choice_restaurant">You haven\'t choose restaurant</string>
+
+    <!-- workers -->
+    <string name="no_choice_restaurant_workers">You don\'t have chosen a restaurant</string>
+    <string name="is_eating_at">" is eating at \n"</string>
+    <string name="hasn_t_decided">" hasn\'t decided yet"</string>
+    <string name="is_joining">" is joining!"</string>
+
+    <!-- restaurant list -->
+    <string name="restaurant_image">restaurant Image</string>
+    <string name="restaurant_open">Restaurant open</string>
+    <string name="not_open_yet">Not open yet</string>
+
+    <!-- Firebase query -->
+    <string name="error_query">Error getting documents : %s</string>
+
+    <!-- Stream -->
+    <string name="error_stream">error : %s</string>
+    <string name="on_Complete_message">On complete</string>
+
+    <!-- Toolbar text -->
+    <string name="I_m_hungry">I\'m hungry</string>
+    <string name="workers_toolbar">Workers</string>
+
+    <!-- map fragment -->
+    <string name="permission_denied">Permission denied</string>
+    <string name="my_position">My position</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Notifications</string>
+    <string name="location">Location</string>
+    <string name="choose_options">Choose your options</string>
+
+    <!-- drawer style -->
+    <style name="header_nav">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/text_size_40</item>
+        <item name="android:layout_marginBottom">@dimen/margin_25</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
+
 
 </resources>

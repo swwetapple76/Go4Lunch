@@ -7,13 +7,41 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="colorPrimary">#78909C</color>
-    <color name="colorPrimaryDark">#546E7A</color>
-    <color name="colorAccent">#FFA000</color>
     <color name="colorError">#FF5252</color>
     <color name="colorGreen">#6BB18C</color>
     <color name="colorSandLight">#ECDAAF</color>
     <color name="colorSand">#EBCB94</color>
     <color name="restaurant_placeholder_bg">#E3E3E3</color>
     <color name="colorAccentDark">#4aa87a</color>
+
+
+    <color name="colorPrimary">#F4511E</color>
+
+    <color name="colorPrimaryDark">#C62828</color>
+
+    <color name="colorAccent">#69F0AE</color>
+    <color name="primary_text">#212121</color>
+    <color name="secondary_text">#424242</color>
+
+    <color name="background">#D3D1D1</color>
+    <color name="color_workers">#BEBDBD</color>
+
+    <!-- Connexion Color -->
+
+    <color name="twitter_button">#327bdb</color>
+
+    <color name="facebook_button">#3b5998</color>
+
+    <color name="google_button">#db3236</color>
+
+    <color name="email_button">#833869</color>
+
+    <!-- colors of the Navigation Drawer -->
+
+    <color name="navigationDrawerBackground">#FF8A50</color>
+    <color name="white_text">#FFF</color>
+
+    <!-- Stars Color -->
+    <color name="stars">#dedc6d</color>
+
 </resources>

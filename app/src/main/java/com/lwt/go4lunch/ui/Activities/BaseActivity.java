@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.view.View;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.viewbinding.ViewBinding;
 
 abstract class BaseActivity<T extends ViewBinding> extends AppCompatActivity {
@@ -26,4 +27,14 @@ abstract class BaseActivity<T extends ViewBinding> extends AppCompatActivity {
         setContentView(view);
     }
 
+    @Nullable
+    protected abstract Toolbar getToolbar();
+
+    protected void configureToolBar(String text) {
+        // If ToolBar exists
+        if (this.getToolbar() != null) {
+            getToolbar().setTitle(text);
+            setSupportActionBar(this.getToolbar());
+        }
+    }
 }

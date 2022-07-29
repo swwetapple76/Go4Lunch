@@ -4,6 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/drawer_layout"
+    android:fitsSystemWindows="true"
     tools:context=".ui.Activities.MainActivity">
 
     <com.mancj.materialsearchbar.MaterialSearchBar
@@ -45,5 +47,6 @@
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="0dp" />
 
+    <include layout="@layout/toolbar"/>
 
 </RelativeLayout>

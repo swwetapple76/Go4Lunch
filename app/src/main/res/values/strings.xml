@@ -166,17 +166,4 @@
     <string name="location">Location</string>
     <string name="choose_options">Choose your options</string>
 
-    <!-- drawer style -->
-    <style name="header_nav">
-        <item name="android:layout_gravity">center</item>
-        <item name="android:textColor">@android:color/white</item>
-        <item name="android:textSize">@dimen/text_size_40</item>
-        <item name="android:layout_marginBottom">@dimen/margin_25</item>
-        <item name="android:textStyle">bold</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_width">wrap_content</item>
-    </style>
-
-
-
 </resources>

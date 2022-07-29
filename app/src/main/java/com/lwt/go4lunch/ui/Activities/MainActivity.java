@@ -20,24 +20,31 @@ import com.lwt.go4lunch.ui.Fragment.ListViewFragment;
 import com.lwt.go4lunch.ui.Fragment.MapsFragment;
 import com.lwt.go4lunch.ui.Fragment.WorkmatesFragment;
 
-public class MainActivity extends BaseActivity<ActivityMainBinding> implements PopupMenu.OnMenuItemClickListener {
+public class MainActivity extends BaseActivity<ActivityMainBinding>  {
 
     private BottomNavigationView bottomNavigationView;
+
+
     @Override
     ActivityMainBinding getViewBinding() {
         return ActivityMainBinding.inflate(getLayoutInflater());
     }
-       @Override
-       public void onCreate(Bundle savedInstanceState) {
+
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         // Set the layout file as the content view.
         setContentView(R.layout.activity_main);
         //Bottom Bar
-         BottomNavigationView bottomNavigationView = findViewById(R.id.activity_main_bottom_navigation);
-         bottomNavigationView.setOnItemSelectedListener(mOnNavigationItemSelectedListener);
+        BottomNavigationView bottomNavigationView = findViewById(R.id.activity_main_bottom_navigation);
+        bottomNavigationView.setOnItemSelectedListener(mOnNavigationItemSelectedListener);
 
-                          }
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+
+
+    }
 
     @Nullable
     @Override
@@ -52,7 +59,7 @@ public class MainActivity extends BaseActivity<ActivityMainBinding> implements P
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
             switch (item.getItemId()) {
                 case R.id.action_map:
-                   loadFragment(new MapsFragment());
+                    loadFragment(new MapsFragment());
                     return true;
                 case R.id.action_listView:
 
@@ -75,19 +82,18 @@ public class MainActivity extends BaseActivity<ActivityMainBinding> implements P
         transaction.commit();
     }
 
-    //AppBar
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menu_main, menu);
-        MenuItem searchItem = menu.findItem(R.id.action_search);
-        SearchView searchView =
-                (SearchView) searchItem.getActionView();
-
-        // Configure the search info and add any event listeners...
-
-        return super.onCreateOptionsMenu(menu);
-    }
-
+//    //AppBar
+//    @Override
+//    public boolean onCreateOptionsMenu(Menu menu) {
+//        getMenuInflater().inflate(R.menu.menu_main, menu);
+//        MenuItem searchItem = menu.findItem(R.id.action_search);
+//        SearchView searchView =
+//                (SearchView) searchItem.getActionView();
+//
+//        // Configure the search info and add any event listeners...
+//
+//        return super.onCreateOptionsMenu(menu);
+//    }
 
 
     @Override
@@ -105,50 +111,4 @@ public class MainActivity extends BaseActivity<ActivityMainBinding> implements P
         }
     }
 
-    public void showPopup(View v) {
-        PopupMenu popup = new PopupMenu(this, v);
-        MenuInflater inflater = popup.getMenuInflater();
-        inflater.inflate(R.menu.drawer_menu, popup.getMenu());
-        popup.show();
-    }
-
-    public void showMenu(View v) {
-        PopupMenu popup = new PopupMenu(this, v);
-
-        // This activity implements OnMenuItemClickListener
-        popup.setOnMenuItemClickListener(this);
-        popup.inflate(R.menu.drawer_menu);
-        popup.show();
-    }
-
-    @Override
-    public boolean onMenuItemClick(MenuItem item) {
-        switch (item.getItemId()) {
-            case R.id.nav_lunch:
-                lunch(item);
-                return true;
-            case R.id.nav_settings:
-                setting(item);
-                return true;
-            case R.id.logout:
-                logout(item);
-                return true;
-            default:
-                return false;
-        }
-    }
-
-    private void logout(MenuItem item) {
-    }
-
-    private void setting(MenuItem item) {
-    }
-
-    private void lunch(MenuItem item) {
-    }
-
-    @Override
-    public void onPointerCaptureChanged(boolean hasCapture) {
-        super.onPointerCaptureChanged(hasCapture);
-    }
 }

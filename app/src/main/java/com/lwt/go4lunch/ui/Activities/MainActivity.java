@@ -2,17 +2,15 @@ package com.lwt.go4lunch.ui.Activities;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.appcompat.widget.PopupMenu;
-import androidx.appcompat.widget.SearchView;
+import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.widget.Toolbar;
+import androidx.core.view.GravityCompat;
+import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuInflater;
 import android.view.MenuItem;
-import android.view.View;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.lwt.go4lunch.R;
 import com.lwt.go4lunch.databinding.ActivityMainBinding;
@@ -23,6 +21,7 @@ import com.lwt.go4lunch.ui.Fragment.WorkmatesFragment;
 public class MainActivity extends BaseActivity<ActivityMainBinding>  {
 
     private BottomNavigationView bottomNavigationView;
+    private DrawerLayout drawer;
 
 
     @Override
@@ -40,10 +39,13 @@ public class MainActivity extends BaseActivity<ActivityMainBinding>  {
         BottomNavigationView bottomNavigationView = findViewById(R.id.activity_main_bottom_navigation);
         bottomNavigationView.setOnItemSelectedListener(mOnNavigationItemSelectedListener);
 
-        Toolbar toolbar = findViewById(R.id.toolbar);
+        Toolbar toolbar = findViewById(R.id.searchBar);
         setSupportActionBar(toolbar);
 
-
+        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawer, toolbar,
+                R.string.navigation_drawer_open, R.string.navigation_drawer_close);
+        drawer.addDrawerListener(toggle);
+        toggle.syncState();
     }
 
     @Nullable
@@ -51,6 +53,18 @@ public class MainActivity extends BaseActivity<ActivityMainBinding>  {
     protected Toolbar getToolbar() {
         return null;
     }
+
+    @Override
+        public void onBackPressed() {
+            if (drawer.isDrawerOpen(GravityCompat.START)) {
+                drawer.closeDrawer(GravityCompat.START);
+            } else {
+                super.onBackPressed();
+            }
+        }
+
+
+
 
     private BottomNavigationView.OnItemSelectedListener mOnNavigationItemSelectedListener
             = new BottomNavigationView.OnItemSelectedListener() {

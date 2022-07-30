@@ -2,6 +2,10 @@
     <string name="app_name">Go4Lunch</string>
     <string name="logo">logo</string>
 
+    //navigation drawer
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
     <string name="main_activity_description">Find a nice restaurant and invite your co-workers for lunch!</string>
 
     <string name="login">Login</string>

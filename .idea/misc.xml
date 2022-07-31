@@ -3,6 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Formation/RNCP/project_7/Go4Lunch/app/src/main/res/drawable-v24/ic_bol.xml" value="0.1225" />
+        <entry key="..\:/Formation/RNCP/project_7/Go4Lunch/app/src/main/res/drawable-v24/ic_yellow_star_32dp.xml" value="0.1225" />
         <entry key="..\:/Formation/RNCP/project_7/Go4Lunch/app/src/main/res/drawable-v24/nav_item_color_state.xml" value="0.145" />
         <entry key="..\:/Formation/RNCP/project_7/Go4Lunch/app/src/main/res/drawable/button_radius_accent_color.xml" value="0.1" />
         <entry key="..\:/Formation/RNCP/project_7/Go4Lunch/app/src/main/res/drawable/button_radius_primary_color.xml" value="0.1" />
@@ -17,7 +19,7 @@
         <entry key="..\:/Formation/RNCP/project_7/Go4Lunch/app/src/main/res/drawable/image_bg_gradiant.xml" value="0.1" />
         <entry key="..\:/Formation/RNCP/project_7/Go4Lunch/app/src/main/res/layout/activity_fragment.xml" value="0.1" />
         <entry key="..\:/Formation/RNCP/project_7/Go4Lunch/app/src/main/res/layout/activity_login.xml" value="0.14780701754385964" />
-        <entry key="..\:/Formation/RNCP/project_7/Go4Lunch/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Formation/RNCP/project_7/Go4Lunch/app/src/main/res/layout/activity_main.xml" value="0.14666666666666667" />
         <entry key="..\:/Formation/RNCP/project_7/Go4Lunch/app/src/main/res/layout/activity_map.xml" value="0.14780701754385964" />
         <entry key="..\:/Formation/RNCP/project_7/Go4Lunch/app/src/main/res/layout/activity_permissions.xml" value="0.1" />
         <entry key="..\:/Formation/RNCP/project_7/Go4Lunch/app/src/main/res/layout/activity_profile.xml" value="0.14780701754385964" />
@@ -26,6 +28,7 @@
         <entry key="..\:/Formation/RNCP/project_7/Go4Lunch/app/src/main/res/layout/bottom_bar.xml" value="0.12265625" />
         <entry key="..\:/Formation/RNCP/project_7/Go4Lunch/app/src/main/res/layout/content_main.xml" value="0.14780701754385964" />
         <entry key="..\:/Formation/RNCP/project_7/Go4Lunch/app/src/main/res/layout/dimen.xml" value="0.13771929824561405" />
+        <entry key="..\:/Formation/RNCP/project_7/Go4Lunch/app/src/main/res/layout/fragment_favorite_restaurant.xml" value="0.1" />
         <entry key="..\:/Formation/RNCP/project_7/Go4Lunch/app/src/main/res/layout/fragment_item.xml" value="0.2" />
         <entry key="..\:/Formation/RNCP/project_7/Go4Lunch/app/src/main/res/layout/fragment_item_list.xml" value="0.1859375" />
         <entry key="..\:/Formation/RNCP/project_7/Go4Lunch/app/src/main/res/layout/fragment_list_view.xml" value="0.16666666666666666" />
@@ -34,13 +37,16 @@
         <entry key="..\:/Formation/RNCP/project_7/Go4Lunch/app/src/main/res/layout/fragment_workmates.xml" value="0.14780701754385964" />
         <entry key="..\:/Formation/RNCP/project_7/Go4Lunch/app/src/main/res/layout/fragment_workmates_list.xml" value="0.14780701754385964" />
         <entry key="..\:/Formation/RNCP/project_7/Go4Lunch/app/src/main/res/layout/fragment_workmates_list_list.xml" value="0.22" />
+        <entry key="..\:/Formation/RNCP/project_7/Go4Lunch/app/src/main/res/layout/fragment_your_lunch.xml" value="0.12409420289855072" />
         <entry key="..\:/Formation/RNCP/project_7/Go4Lunch/app/src/main/res/layout/ic_baseline_public_24.xml" value="0.14780701754385964" />
+        <entry key="..\:/Formation/RNCP/project_7/Go4Lunch/app/src/main/res/layout/item_worker.xml" value="0.13632246376811594" />
         <entry key="..\:/Formation/RNCP/project_7/Go4Lunch/app/src/main/res/layout/list_view_element.xml" value="0.13771929824561405" />
         <entry key="..\:/Formation/RNCP/project_7/Go4Lunch/app/src/main/res/layout/menu_bar.xml" value="0.13771929824561405" />
         <entry key="..\:/Formation/RNCP/project_7/Go4Lunch/app/src/main/res/layout/menu_content.xml" value="0.1" />
         <entry key="..\:/Formation/RNCP/project_7/Go4Lunch/app/src/main/res/layout/nav_header.xml" value="0.1" />
         <entry key="..\:/Formation/RNCP/project_7/Go4Lunch/app/src/main/res/layout/navigation_drawer_footer.xml" value="0.13771929824561405" />
         <entry key="..\:/Formation/RNCP/project_7/Go4Lunch/app/src/main/res/layout/restaurant_client_item.xml" value="0.14780701754385964" />
+        <entry key="..\:/Formation/RNCP/project_7/Go4Lunch/app/src/main/res/layout/restaurant_detail.xml" value="0.1" />
         <entry key="..\:/Formation/RNCP/project_7/Go4Lunch/app/src/main/res/layout/toolbar.xml" value="0.13771929824561405" />
         <entry key="..\:/Formation/RNCP/project_7/Go4Lunch/app/src/main/res/layout/top_bar.xml" value="0.13771929824561405" />
         <entry key="..\:/Formation/RNCP/project_7/Go4Lunch/app/src/main/res/layout/workmate_list_item.xml" value="0.13771929824561405" />
@@ -51,6 +57,7 @@
         <entry key="..\:/Formation/RNCP/project_7/Go4Lunch/app/src/main/res/menu/menu_main.xml" value="0.14780701754385964" />
         <entry key="..\:/Formation/RNCP/project_7/Go4Lunch/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1" />
         <entry key="..\:/Formation/RNCP/project_7/Go4Lunch/app/src/main/res/xml/notifications_settings.xml" value="0.13771929824561405" />
+        <entry key="..\:/Formation/RNCP/project_7/Go4Lunch/app/src/main/res/xml/root_preferences.xml" value="0.13632246376811594" />
         <entry key="..\:/Formation/RNCP/project_7/Go4Lunch/app/src/main/res/xml/settings_headers.xml" value="0.13771929824561405" />
         <entry key="..\:/Formation/RNCP/project_7/Go4Lunch_2/app/src/main/res/drawable/button_radius_primary_color.xml" value="0.162" />
         <entry key="..\:/Formation/RNCP/project_7/Go4Lunch_2/app/src/main/res/layout/activity_main.xml" value="0.1" />

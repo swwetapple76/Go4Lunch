@@ -43,5 +43,7 @@
     <dimen name="image_restaurant">70dp</dimen>
     <dimen name="padding_16">16dp</dimen>
     <dimen name="image_100">100dp</dimen>
+    <dimen name="list_item_spacing">16dp</dimen>
+    <dimen name="list_item_spacing_half">8dp</dimen>
 
 </resources>

@@ -1,7 +1,6 @@
 package com.lwt.go4lunch.ui.Activities;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
@@ -12,13 +11,17 @@ import androidx.fragment.app.FragmentTransaction;
 import android.os.Bundle;
 import android.view.MenuItem;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.android.material.navigation.NavigationView;
 import com.lwt.go4lunch.R;
 import com.lwt.go4lunch.databinding.ActivityMainBinding;
+import com.lwt.go4lunch.ui.Fragment.FavoriteRestaurant;
 import com.lwt.go4lunch.ui.Fragment.ListViewFragment;
 import com.lwt.go4lunch.ui.Fragment.MapsFragment;
 import com.lwt.go4lunch.ui.Fragment.WorkmatesFragment;
+import com.lwt.go4lunch.ui.Fragment.menu.RestaurantDetail;
+import com.lwt.go4lunch.ui.Fragment.menu.SettingsFragment;
 
-public class MainActivity extends BaseActivity<ActivityMainBinding>  {
+public class MainActivity extends BaseActivity<ActivityMainBinding> implements NavigationView.OnNavigationItemSelectedListener  {
 
     private DrawerLayout drawer;
 
@@ -43,10 +46,40 @@ public class MainActivity extends BaseActivity<ActivityMainBinding>  {
 
         drawer = findViewById(R.id.drawer_layout);
 
+        NavigationView navigationView = findViewById(R.id.nav_view);
+        navigationView.setNavigationItemSelectedListener(this);
+
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawer, toolbar,
                 R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.addDrawerListener(toggle);
         toggle.syncState();
+
+        if (savedInstanceState == null) {
+            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
+                    new RestaurantDetail()).commit();
+            navigationView.setCheckedItem(R.id.nav_lunch);
+        }
+    }
+
+    @Override
+    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.nav_lunch:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
+                        new RestaurantDetail()).commit();
+                break;
+            case R.id.nav_favorite:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
+                        new FavoriteRestaurant()).commit();
+                break;
+            case R.id.nav_settings:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
+                        new SettingsFragment()).commit();
+                break;
+        }
+
+        drawer.closeDrawer(GravityCompat.START);
+        return true;
     }
 
     @Override
@@ -116,5 +149,6 @@ public class MainActivity extends BaseActivity<ActivityMainBinding>  {
 
         }
     }
+
 
 }

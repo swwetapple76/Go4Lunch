@@ -45,12 +45,7 @@
         <item name="windowNoTitle">true</item>
         <item name="android:textColorHint">@android:color/darker_gray</item>
     </style>
-    <!-- STYLE TOOLBAR -->
-    <style name="ToolbarTheme" parent="ThemeOverlay.AppCompat.Dark">
-        <item name="colorControlNormal">@color/white</item>
-        <item name="titleTextColor">@color/white</item>
-        <item name="android:textColor">@color/black</item>
-    </style>
+
     <!--Restaurant Detail-->
     <style name="RestaurantDetailsAction" parent="Widget.AppCompat.Button.Borderless">
         <item name="android:textAlignment">center</item>
@@ -79,4 +74,70 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_width">wrap_content</item>
     </style>
+
+    <!-- detail page style -->
+    <style name="detail_text_style">
+        <item name="android:layout_marginStart">@dimen/margin_start_10</item>
+        <item name="android:layout_marginTop">@dimen/margin_top_15</item>
+        <item name="android:textColor">@color/quantum_white_100</item>
+        <item name="android:textSize">@dimen/text_size_20</item>
+    </style>
+
+    <style name="text_adress_style">
+        <item name="android:layout_margin">@dimen/margin_start_10</item>
+        <item name="android:layout_marginStart">@dimen/margin_top_20</item>
+        <item name="android:layout_marginTop">@dimen/margin_top_15</item>
+        <item name="android:textColor">@color/white_text</item>
+        <item name="android:textSize">@dimen/text_size_14</item>
+    </style>
+
+    <style name="text_style_button_detail">
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">@dimen/text_size_16</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- item -->
+    <style name="item_text_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/text_size_16</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="item_text_open">
+        <item name="android:textSize">@dimen/text_size_16</item>
+        <item name="android:textStyle">italic</item>
+    </style>
+    <style name="distance_style">
+        <item name="android:textSize">@dimen/text_size_18</item>
+        <item name="android:textColor">@color/background</item>
+        <item name="android:textStyle">italic|bold</item>
+    </style>
+    <style name="item_workers_style">
+        <item name="android:textSize">@dimen/text_size_18</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="stars">
+        <item name="android:layout_height">@dimen/image_button_20</item>
+        <item name="android:layout_width">@dimen/image_button_20</item>
+        <item name="android:src">@drawable/ic_yellow_star_32dp</item>
+    </style>
+
+    <!-- workers -->
+    <style name="worker_image">
+        <item name="android:layout_width">@dimen/image_button_50</item>
+        <item name="android:layout_height">@dimen/image_button_50</item>
+        <item name="android:layout_marginStart">@dimen/margin_fab_16</item>
+        <item name="android:layout_marginTop">@dimen/margin_start_10</item>
+        <item name="android:layout_marginBottom">@dimen/margin_start_10</item>
+    </style>
+    <style name="worker_name">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/margin_top_20</item>
+        <item name="android:textSize">@dimen/text_size_16</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/secondary_text</item>
+    </style>
+
 </resources>

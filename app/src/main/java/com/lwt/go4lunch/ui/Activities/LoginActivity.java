@@ -15,7 +15,6 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.lwt.go4lunch.R;
 import com.lwt.go4lunch.databinding.ActivityLoginBinding;
-import com.lwt.go4lunch.databinding.ActivityMainBinding;
 
 import java.util.Arrays;
 import java.util.List;
@@ -26,7 +25,7 @@ public class LoginActivity extends BaseActivity<ActivityLoginBinding> {
     int AUTHUI_REQUEST_CODE = 10001;
 
        @Override
-    ActivityLoginBinding getViewBinding() {
+       ActivityLoginBinding getViewBinding() {
         return ActivityLoginBinding.inflate(getLayoutInflater());
     }
 
@@ -40,12 +39,6 @@ public class LoginActivity extends BaseActivity<ActivityLoginBinding> {
         startLoginActivity();
     }
 }
-
-    @Nullable
-    @Override
-    protected Toolbar getToolbar() {
-        return null;
-    }
 
     private void startLoginActivity(){
         Intent intent = new Intent(this, MainActivity.class);

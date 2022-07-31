@@ -20,7 +20,6 @@ import com.lwt.go4lunch.ui.Fragment.WorkmatesFragment;
 
 public class MainActivity extends BaseActivity<ActivityMainBinding>  {
 
-    private BottomNavigationView bottomNavigationView;
     private DrawerLayout drawer;
 
 
@@ -39,19 +38,15 @@ public class MainActivity extends BaseActivity<ActivityMainBinding>  {
         BottomNavigationView bottomNavigationView = findViewById(R.id.activity_main_bottom_navigation);
         bottomNavigationView.setOnItemSelectedListener(mOnNavigationItemSelectedListener);
 
-        Toolbar toolbar = findViewById(R.id.searchBar);
+        Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        drawer = findViewById(R.id.drawer_layout);
 
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawer, toolbar,
                 R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.addDrawerListener(toggle);
         toggle.syncState();
-    }
-
-    @Nullable
-    @Override
-    protected Toolbar getToolbar() {
-        return null;
     }
 
     @Override
@@ -62,9 +57,6 @@ public class MainActivity extends BaseActivity<ActivityMainBinding>  {
                 super.onBackPressed();
             }
         }
-
-
-
 
     private BottomNavigationView.OnItemSelectedListener mOnNavigationItemSelectedListener
             = new BottomNavigationView.OnItemSelectedListener() {

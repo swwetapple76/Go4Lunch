@@ -23,12 +23,6 @@ public class SettingActivity extends BaseActivity <ActivitySettingBinding> imple
         return ActivitySettingBinding.inflate(getLayoutInflater());
     }
 
-    @Nullable
-    @Override
-    protected Toolbar getToolbar() {
-        return mToolbar;
-    }
-
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -45,6 +39,9 @@ public class SettingActivity extends BaseActivity <ActivitySettingBinding> imple
             getSupportActionBar().setDisplayShowHomeEnabled(true);
         }
 
+    }
+
+    private void configureToolBar(String string) {
     }
 
     @Override

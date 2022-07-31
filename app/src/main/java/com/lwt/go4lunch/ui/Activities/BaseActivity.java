@@ -27,14 +27,4 @@ abstract class BaseActivity<T extends ViewBinding> extends AppCompatActivity {
         setContentView(view);
     }
 
-    @Nullable
-    protected abstract Toolbar getToolbar();
-
-    protected void configureToolBar(String text) {
-        // If ToolBar exists
-        if (this.getToolbar() != null) {
-            getToolbar().setTitle(text);
-            setSupportActionBar(this.getToolbar());
-        }
-    }
 }

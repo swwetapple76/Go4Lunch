@@ -9,17 +9,16 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
 import android.os.Bundle;
+import android.view.Menu;
 import android.view.MenuItem;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationView;
 import com.lwt.go4lunch.R;
 import com.lwt.go4lunch.databinding.ActivityMainBinding;
-import com.lwt.go4lunch.ui.Fragment.FavoriteRestaurant;
 import com.lwt.go4lunch.ui.Fragment.ListViewFragment;
 import com.lwt.go4lunch.ui.Fragment.MapsFragment;
 import com.lwt.go4lunch.ui.Fragment.WorkmatesFragment;
-import com.lwt.go4lunch.ui.Fragment.menu.RestaurantDetail;
-import com.lwt.go4lunch.ui.Fragment.menu.SettingsFragment;
+
 
 public class MainActivity extends BaseActivity<ActivityMainBinding> implements NavigationView.OnNavigationItemSelectedListener  {
 
@@ -55,28 +54,32 @@ public class MainActivity extends BaseActivity<ActivityMainBinding> implements N
         toggle.syncState();
 
         if (savedInstanceState == null) {
-            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-                    new RestaurantDetail()).commit();
-            navigationView.setCheckedItem(R.id.nav_lunch);
+            loadFragment(new MapsFragment());
         }
     }
 
     @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_main,menu);
+        return true;
+    }
+
+    @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-        switch (item.getItemId()) {
-            case R.id.nav_lunch:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-                        new RestaurantDetail()).commit();
-                break;
-            case R.id.nav_favorite:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-                        new FavoriteRestaurant()).commit();
-                break;
-            case R.id.nav_settings:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-                        new SettingsFragment()).commit();
-                break;
-        }
+//        switch (item.getItemId()) {
+//            case R.id.nav_lunch:
+//                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
+//                        new RestaurantDetail()).commit();
+//                break;
+//            case R.id.nav_favorite:
+//                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
+//                        new FavoriteRestaurant()).commit();
+//                break;
+//            case R.id.nav_settings:
+//                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
+//                        new SettingsFragment()).commit();
+//                break;
+//        }
 
         drawer.closeDrawer(GravityCompat.START);
         return true;
@@ -121,25 +124,12 @@ public class MainActivity extends BaseActivity<ActivityMainBinding> implements N
         transaction.commit();
     }
 
-//    //AppBar
-//    @Override
-//    public boolean onCreateOptionsMenu(Menu menu) {
-//        getMenuInflater().inflate(R.menu.menu_main, menu);
-//        MenuItem searchItem = menu.findItem(R.id.action_search);
-//        SearchView searchView =
-//                (SearchView) searchItem.getActionView();
-//
-//        // Configure the search info and add any event listeners...
-//
-//        return super.onCreateOptionsMenu(menu);
-//    }
-
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
-            case R.id.action_menu:
-                return true;
+//            case R.id.action_menu:
+//                return true;
 
             case R.id.action_search:
                 return true;

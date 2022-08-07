@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
+import android.location.Location;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -19,6 +20,7 @@ import com.lwt.go4lunch.R;
 
 public class MapsFragment extends Fragment {
 
+    Location currentLocation;
     private final OnMapReadyCallback callback = new OnMapReadyCallback() {
 
         /**
@@ -32,9 +34,9 @@ public class MapsFragment extends Fragment {
          */
         @Override
         public void onMapReady(GoogleMap googleMap) {
-            LatLng sydney = new LatLng(-34, 151);
-            googleMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
-            googleMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
+            LatLng paris = new LatLng(currentLocation.getLatitude(), currentLocation.getLongitude());
+            googleMap.addMarker(new MarkerOptions().position(paris).title("Current Location"));
+            googleMap.moveCamera(CameraUpdateFactory.newLatLng(paris));
         }
     };
 

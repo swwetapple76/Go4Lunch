@@ -140,4 +140,49 @@
         <item name="android:textColor">@color/secondary_text</item>
     </style>
 
+    <declare-styleable name="MaterialSearchBar">
+        //Base
+        <attr format="boolean" name="mt_speechMode"/>
+        <attr format="integer" name="mt_maxSuggestionsCount"/>
+        <attr format="boolean" name="mt_navIconEnabled"/>
+        <attr format="boolean" name="mt_roundedSearchBarEnabled"/> //(API 21+ , Will Revert To Default Shape On Lower
+        <attr format="boolean" name="mt_menuDividerEnabled"/>
+        <attr format="color" name="mt_dividerColor"/>
+        <attr format="color" name="mt_searchBarColor"/>
+
+        //Icons
+        <attr format="reference" name="mt_menuIconDrawable"/>
+        <attr format="reference" name="mt_searchIconDrawable"/>
+        <attr format="reference" name="mt_speechIconDrawable"/>
+        <attr format="reference" name="mt_backIconDrawable"/>
+        <attr format="reference" name="mt_clearIconDrawable"/>
+        <attr format="color" name="mt_navIconTint"/>
+        <attr format="color" name="mt_menuIconTint"/>
+        <attr format="color" name="mt_searchIconTint"/>
+        <attr format="color" name="mt_backIconTint"/>
+        <attr format="color" name="mt_clearIconTint"/>
+        <attr format="boolean" name="mt_navIconUseTint"/>
+        <attr format="boolean" name="mt_menuIconUseTint"/>
+        <attr format="boolean" name="mt_searchIconUseTint"/>
+        <attr format="boolean" name="mt_backIconUseTint"/>
+        <attr format="boolean" name="mt_clearIconUseTint"/>
+        <attr format="boolean" name="mt_borderlessRippleEnabled"/>
+
+        //Text
+        <attr format="string" name="mt_hint"/>
+        <attr format="string" name="mt_placeholder"/>
+        <attr format="color" name="mt_textColor"/>
+        <attr format="color" name="mt_hintColor"/>
+        <attr format="color" name="mt_placeholderColor"/>
+        <attr format="color" name="mt_textCursorTint"/>
+        <attr format="reference" name="mt_leftTextSelectorDrawable"/>
+        <attr format="reference" name="mt_middleTextSelectorDrawable"/>
+        <attr format="reference" name="mt_rightTextSelectorDrawable"/>
+        <attr format="color" name="mt_leftTextSelectorTint"/>
+        <attr format="color" name="mt_middleTextSelectorTint"/>
+        <attr format="color" name="mt_rightTextSelectorTint"/>
+        <attr format="boolean" name="mt_handlesTintEnabled"/>
+        <attr format="color" name="mt_highlightedTextColor"/>
+    </declare-styleable>
+
 </resources>

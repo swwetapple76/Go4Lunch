@@ -11,6 +11,7 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
 import android.Manifest;
+import android.annotation.SuppressLint;
 import android.content.pm.PackageManager;
 import android.location.Location;
 import android.os.Bundle;
@@ -43,7 +44,7 @@ import com.lwt.go4lunch.ui.Fragment.MapsFragment;
 import com.lwt.go4lunch.ui.Fragment.WorkmatesFragment;
 
 
-public class MainActivity extends BaseActivity<ActivityMainBinding> implements NavigationView.OnNavigationItemSelectedListener, OnMapReadyCallback {
+public class MainActivity extends BaseActivity<ActivityMainBinding> implements NavigationView.OnNavigationItemSelectedListener {
 
     private DrawerLayout drawer;
     Location currentLocation;
@@ -188,17 +189,17 @@ public class MainActivity extends BaseActivity<ActivityMainBinding> implements N
             return;
 
         }
-        Task<Location> task = fusedLocationProviderClient.getLastLocation();
+        @SuppressLint("MissingPermission") Task<Location> task = fusedLocationProviderClient.getLastLocation();
         task.addOnSuccessListener(new OnSuccessListener<Location>() {
             @Override
             public void onSuccess(Location location) {
                 if (location !=null){
                     currentLocation=location;
-                    Toast.makeText(getApplicationContext(),(int) currentLocation.getLatitude(),Toast.LENGTH_LONG)
-                            .show();
-                    SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
-                            .findFragmentById(R.id.map);
-                    mapFragment.getMapAsync(MainActivity.this);
+//                    Toast.makeText(getApplicationContext(),(int) currentLocation.getLatitude(),Toast.LENGTH_LONG)
+//                            .show();
+                    Bundle result = new Bundle();
+                    result.putParcelable("bundleKey",location);
+                    getSupportFragmentManager().setFragmentResult("locationKey", result);
                 }
             }
         });
@@ -242,13 +243,6 @@ public class MainActivity extends BaseActivity<ActivityMainBinding> implements N
                 break;
         }
     }
+}
 
-    @Override
-    public void onMapReady(@NonNull GoogleMap googleMap) {
-
-       LatLng sydney = new LatLng(currentLocation.getLatitude(), currentLocation.getLongitude());
-       googleMap.addMarker(new MarkerOptions().position(sydney).title("Current Location"));
-       googleMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
-        }
-    };
 

@@ -3,6 +3,7 @@ package com.lwt.go4lunch.ui.Fragment;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentResultListener;
 
 import android.location.Location;
 import android.os.Bundle;
@@ -21,25 +22,18 @@ import com.lwt.go4lunch.R;
 public class MapsFragment extends Fragment {
 
     Location currentLocation;
+    GoogleMap googleMap;
     private final OnMapReadyCallback callback = new OnMapReadyCallback() {
 
-        /**
-         * Manipulates the map once available.
-         * This callback is triggered when the map is ready to be used.
-         * This is where we can add markers or lines, add listeners or move the camera.
-         * In this case, we just add a marker near Sydney, Australia.
-         * If Google Play services is not installed on the device, the user will be prompted to
-         * install it inside the SupportMapFragment. This method will only be triggered once the
-         * user has installed Google Play services and returned to the app.
-         */
         @Override
         public void onMapReady(GoogleMap googleMap) {
-            LatLng paris = new LatLng(currentLocation.getLatitude(), currentLocation.getLongitude());
-            googleMap.addMarker(new MarkerOptions().position(paris).title("Current Location"));
-            googleMap.moveCamera(CameraUpdateFactory.newLatLng(paris));
-        }
-    };
-
+            MapsFragment.this.googleMap = googleMap;
+            if (currentLocation != null) {
+                LatLng paris = new LatLng(currentLocation.getLatitude(), currentLocation.getLongitude());
+                googleMap.addMarker(new MarkerOptions().position(paris).title("Current Location"));
+                googleMap.moveCamera(CameraUpdateFactory.newLatLng(paris));
+            }
+        }};
 
     @Nullable
     @Override
@@ -57,5 +51,24 @@ public class MapsFragment extends Fragment {
         if (mapFragment != null) {
             mapFragment.getMapAsync(callback);
         }
+    }
+
+    @Override
+    public void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        getParentFragmentManager().setFragmentResultListener("locationKey", this, new FragmentResultListener() {
+            @Override
+            public void onFragmentResult(@NonNull String requestKey, @NonNull Bundle bundle) {
+                // We use a String here, but any type that can be put in a Bundle is supported
+                Location result = bundle.getParcelable("bundleKey");
+                // Do something with the result
+                currentLocation = result;
+                if (googleMap != null) {
+                    LatLng paris = new LatLng(currentLocation.getLatitude(), currentLocation.getLongitude());
+                    googleMap.addMarker(new MarkerOptions().position(paris).title("Current Location"));
+                    googleMap.moveCamera(CameraUpdateFactory.newLatLng(paris));
+                }
+            }
+        });
     }
 }

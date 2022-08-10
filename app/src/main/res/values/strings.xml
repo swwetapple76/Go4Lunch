@@ -171,6 +171,9 @@
     <string name="no_filter">No filter</string>
     <string name="no_worker_has_chosen_this_restaurant">No Worker has chosen this restaurant</string>
     <string name="no_restaurant_for_this_filter_selection">No restaurant for this filter selection</string>
+    <string name="restaurant">Find a restaurant</string>
+    <string name="type_name">"name "</string>
+    <string name="search">Search</string>
 
 
 </resources>

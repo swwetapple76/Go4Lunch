@@ -48,8 +48,16 @@ dependencies {
     implementation 'com.google.android.gms:play-services-maps:18.1.0'
     implementation 'com.google.android.libraries.places:places:2.6.0'
     implementation'com.skyfishjy.ripplebackground:library:1.0.1'
+    implementation 'com.google.code.gson:gson:2.8.9'
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:5.0.0-alpha.3'
+    implementation group: 'com.squareup.okhttp3', name: 'okhttp', version: '5.0.0-alpha.3'
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.3.0'
+    implementation'io.nlopez.smartlocation:library:3.3.1'
 
-    //Fragment library
+
+     //Fragment library
     implementation("androidx.fragment:fragment:1.5.1")
     // FirebaseUI for Firebase Realtime Database
     implementation 'com.firebaseui:firebase-ui-database:8.0.1'
@@ -93,6 +101,7 @@ dependencies {
     implementation 'androidx.fragment:fragment-ktx:1.5.1'
     //Preference
     implementation "androidx.preference:preference:1.2.0"
+
 
     //TEST
     testImplementation 'junit:junit:4.13.2'

@@ -3,6 +3,21 @@ package com.lwt.go4lunch.ui.Activities;
 import static android.Manifest.permission.ACCESS_COARSE_LOCATION;
 import static android.Manifest.permission.ACCESS_FINE_LOCATION;
 
+import android.annotation.SuppressLint;
+import android.annotation.TargetApi;
+import android.content.DialogInterface;
+import android.content.pm.PackageManager;
+import android.location.Location;
+import android.os.Build;
+import android.os.Bundle;
+import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Toast;
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AlertDialog;
@@ -15,28 +30,12 @@ import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.annotation.SuppressLint;
-import android.annotation.TargetApi;
-import android.content.DialogInterface;
-import android.content.pm.PackageManager;
-import android.location.Location;
-import android.os.Build;
-
-import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
-import android.view.View;
-
-import android.widget.Button;
-import android.widget.EditText;
-import android.widget.Toast;
 import com.google.android.gms.location.FusedLocationProviderClient;
 import com.google.android.gms.location.LocationCallback;
 import com.google.android.gms.location.LocationRequest;
 import com.google.android.gms.location.LocationResult;
 import com.google.android.gms.location.LocationServices;
 import com.google.android.gms.maps.model.LatLng;
-
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -52,6 +51,7 @@ import com.lwt.go4lunch.services.map.ResultDistanceMatrix;
 import com.lwt.go4lunch.ui.Fragment.ListViewFragment;
 import com.lwt.go4lunch.ui.Fragment.MapsFragment;
 import com.lwt.go4lunch.ui.Fragment.WorkmatesFragment;
+
 
 import java.util.ArrayList;
 import java.util.List;
@@ -284,9 +284,7 @@ public class MainActivity extends BaseActivity<ActivityMainBinding> implements N
 
         permissionsToRequest = findUnAskedPermissions(permissions);
 
-
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-
 
             if (permissionsToRequest.size() > 0)
                 requestPermissions(permissionsToRequest.toArray(new String[permissionsToRequest.size()]), ALL_PERMISSIONS_RESULT);
@@ -300,30 +298,23 @@ public class MainActivity extends BaseActivity<ActivityMainBinding> implements N
 
         apiService = APIClient.getClient().create(ApiInterface.class);
 
-        recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
-        recyclerView.setNestedScrollingEnabled(false);
-        recyclerView.setHasFixedSize(true);
-
-        LinearLayoutManager layoutManager = new LinearLayoutManager(this);
-        recyclerView.setLayoutManager(layoutManager);
-
-        editText = (EditText) findViewById(R.id.editText);
-        button = (Button) findViewById(R.id.button);
+//        editText = (EditText) findViewById(R.id.editText);
+//        button = (Button) findViewById(R.id.button);
 
 
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String s = editText.getText().toString().trim();
-                String[] split = s.split("\\s+");
-
-
-                if (split.length != 2) {
-                    Toast.makeText(getApplicationContext(), "Please enter text in the required format", Toast.LENGTH_SHORT).show();
-                } else
-                    fetchStores(split[0], split[1]);
-            }
-        });
+//        button.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                String s = editText.getText().toString().trim();
+//                String[] split = s.split("\\s+");
+//
+//
+//                if (split.length != 2) {
+//                    Toast.makeText(getApplicationContext(), "Please enter text in the required format", Toast.LENGTH_SHORT).show();
+//                } else
+//                    fetchStores(split[0], split[1]);
+//            }
+//        });
 
     }
 
@@ -460,6 +451,7 @@ public class MainActivity extends BaseActivity<ActivityMainBinding> implements N
                     public void onLocationUpdated(Location location) {
                         latLngString = location.getLatitude() + "," + location.getLongitude();
                         latLng = new LatLng(location.getLatitude(), location.getLongitude());
+                        Log.i("Location", "The user location: " + latLngString);
                     }
                 });
     }

@@ -1,6 +1,7 @@
 {
   "project_info": {
     "project_number": "418156066210",
+    "firebase_url": "https://go4lunch-lwt-default-rtdb.europe-west1.firebasedatabase.app",
     "project_id": "go4lunch-lwt",
     "storage_bucket": "go4lunch-lwt.appspot.com"
   },
@@ -14,19 +15,19 @@
       },
       "oauth_client": [
         {
-          "client_id": "418156066210-2984co6optgivvrtq30q5tog94q66d8s.apps.googleusercontent.com",
+          "client_id": "418156066210-nd5han4c5jmsjn5t5o6tf2bbb744fhsm.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.lwt.go4lunch",
-            "certificate_hash": "bdaf47ed87457260bba290ee5165fc68e57c656b"
+            "certificate_hash": "89284296342da4224e50cb2015326cc5de4c6dbf"
           }
         },
         {
-          "client_id": "418156066210-62e8t2it26ucna4d8sl7m8npj1ejm6ap.apps.googleusercontent.com",
+          "client_id": "418156066210-uu85jvmqraosn0grpk3egc8k1ek772nn.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.lwt.go4lunch",
-            "certificate_hash": "c5595cf225443de659ba9708e2792d2a25ceb47f"
+            "certificate_hash": "831705f03a202156d085f892e1ee8216fefb4eda"
           }
         },
         {

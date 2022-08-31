@@ -7,7 +7,7 @@
 
 
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/orange</item>
+        <item name="colorPrimary">@color/light_red</item>
         <item name="colorPrimaryVariant">@color/orange_variant</item>
         <item name="colorOnPrimary">@color/white</item>
         <item name="colorPrimaryDark">?attr/colorPrimary</item>
@@ -44,7 +44,7 @@
         <item name="android:textColor">@android:color/white</item>
         <item name="android:textColorPrimary">@android:color/darker_gray</item>
         <item name="android:textColorSecondary">@android:color/darker_gray</item>
-        <item name="android:windowBackground">@color/orange</item>
+        <item name="android:windowBackground">@color/red</item>
 
         <item name="android:windowNoTitle">true</item>
         <item name="android:windowFullscreen">true</item>

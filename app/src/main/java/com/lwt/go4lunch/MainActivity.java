@@ -25,6 +25,8 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.core.app.ActivityCompat;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
@@ -45,7 +47,10 @@ import com.lwt.go4lunch.di.ViewModelFactory;
 import com.lwt.go4lunch.ui.autocomplete.PredictionViewState;
 import com.lwt.go4lunch.ui.autocomplete.PredictionsAdapter;
 import com.lwt.go4lunch.ui.detailsview.RestaurantDetailsActivity;
+import com.lwt.go4lunch.ui.mapview.MapFragment;
+import com.lwt.go4lunch.ui.restaurants.RestaurantsFragment;
 import com.lwt.go4lunch.ui.setting.SettingActivity;
+import com.lwt.go4lunch.ui.workmates.WorkMatesFragment;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -102,6 +107,9 @@ public class MainActivity extends AppCompatActivity implements
                 appBarConfiguration);
         NavigationUI.setupWithNavController(navView, navController);
 
+//        BottomNavigationView bottomNavigationView = findViewById(R.id.nav_view);
+//        bottomNavigationView.setOnItemSelectedListener(mOnNavigationItemSelectedListener);
+
         // RECEIVE SINGLE LIVEDATA EVENT FROM VM TO KNOW WHICH ACTION IS REQUIRED FOR PERMISSION
         mainActivityViewModel.getActionSingleLiveEvent().observe(this, action -> {
             switch (action) {
@@ -127,6 +135,35 @@ public class MainActivity extends AppCompatActivity implements
         configureRecyclerView();
     }
 
+//    private BottomNavigationView.OnItemSelectedListener mOnNavigationItemSelectedListener
+//            = new BottomNavigationView.OnItemSelectedListener() {
+//
+//        @Override
+//        public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+//            switch (item.getItemId()) {
+//                case R.id.navigation_mapview:
+//                    loadFragment(new MapFragment());
+//                    return true;
+//                case R.id.navigation_listview:
+//
+//                    loadFragment(new RestaurantsFragment());
+//                    return true;
+//                case R.id.navigation_workmates:
+//
+//                    loadFragment(new WorkMatesFragment());
+//                    return true;
+//
+//            }
+//            return false;
+//        }
+//    };
+//
+//    private void loadFragment(Fragment fragment) {
+//        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+//        transaction.replace(R.id.nav_host_fragment_activity_main, fragment);
+//        transaction.addToBackStack(null);
+//        transaction.commit();
+//    }
 
     // HERE WE UPDATE INTERFACE WITH USERS INFORMATION
     private void updateUIWhenCreating() {

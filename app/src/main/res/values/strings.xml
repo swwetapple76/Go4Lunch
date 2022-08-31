@@ -40,7 +40,7 @@
     <!-- USED BY FACEBOOK AUTH -->
     <string name="facebook_application_id">545622527093272</string>
     <string name="fb_login_protocol_scheme">fb545622527093272</string>
-    <string name="facebook_client_token" translatable="false">4ce6d533c495ecc6cd8eb6926508e68c</string>
+    <string name="facebook_client_token" translatable="false">62286b8e82c48216b6f3a48636c60cc3</string>
 
     <!-- USED IN NAVIGATION DRAWER -->
     <string name="navigation_drawer_open">Open navigation drawer</string>

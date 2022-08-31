@@ -1,6 +1,7 @@
 package com.lwt.go4lunch.ui.mapview;
 
 import android.Manifest;
+import android.annotation.SuppressLint;
 import android.content.pm.PackageManager;
 
 import androidx.annotation.NonNull;
@@ -25,6 +26,7 @@ public class MapFragment extends SupportMapFragment implements OnMapReadyCallbac
 
     public MapFragment()  { getMapAsync(this); }
 
+    @SuppressLint("MissingPermission")
     @Override
     public void onMapReady(@NonNull GoogleMap googleMap) {
 

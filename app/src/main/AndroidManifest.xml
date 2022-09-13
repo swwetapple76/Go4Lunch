@@ -56,6 +56,9 @@
         <activity
             android:name=".ui.setting.SettingActivity"
             android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".ui.detailsview.RestaurantDetailsActivity"
+            android:parentActivityName=".MainActivity"/>
 
     </application>
 

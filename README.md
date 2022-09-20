@@ -1,7 +1,5 @@
 <p align="center">
  	<img 
-   		width="300"
-   		height="300"
    		src="screenshot/go4lunch.png"
 		alt="accueil" 
   	>

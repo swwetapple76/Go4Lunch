@@ -8,6 +8,7 @@ import androidx.lifecycle.MutableLiveData;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.DocumentChange;
 import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.QuerySnapshot;
 import com.lwt.go4lunch.model.ChatMessageModel;
 
 import java.util.ArrayList;
@@ -19,16 +20,21 @@ import java.util.Set;
 
 public class ChatMessageRepository {
 
+
+
     public static final String COLLECTION_CHAT = "chat";
+
+    private final FirebaseFirestore db;
+    private final String userId;
+
+    public ChatMessageRepository(FirebaseFirestore db, FirebaseAuth auth){
+        this.db = db;
+        this.userId = Objects.requireNonNull(auth.getCurrentUser()).getUid();
+    }
 
     public LiveData<List<ChatMessageModel>> getChatMessages(String workmateId) {
 
-        String userId = Objects.requireNonNull(FirebaseAuth.getInstance().getCurrentUser()).getUid();
-        FirebaseFirestore db = FirebaseFirestore.getInstance();
-
         MutableLiveData<List<ChatMessageModel>> chatMessagesMutableLiveData = new MutableLiveData<>();
-
-        Set<ChatMessageModel> chatMessages = new HashSet<>();
 
         // CREATE A LIST OF USER TO SORT THEM,
         // IT WILL GIVE THE INDEX FOR DOCUMENT AND COLLECTION
@@ -45,20 +51,20 @@ public class ChatMessageRepository {
                         Log.e("messages error", error.getMessage());
                         return;
                     }
-
                     assert value != null;
-                    for (DocumentChange document : value.getDocumentChanges()) {
-                        if (document.getType() == DocumentChange.Type.ADDED) {
-
-                            chatMessages.add(document.getDocument().toObject(ChatMessageModel.class));
-
-                        }
-                    }
-                    List<ChatMessageModel> chatMessageModels = new ArrayList<>(chatMessages);
-                    chatMessagesMutableLiveData.setValue(chatMessageModels);
-
+                    setChatMessages(value, chatMessagesMutableLiveData);
                 });
         return chatMessagesMutableLiveData;
+    }
 
+    public void setChatMessages(QuerySnapshot value, MutableLiveData<List<ChatMessageModel>> liveData){
+        Set<ChatMessageModel> chatMessages = new HashSet<>();
+        for (DocumentChange document : value.getDocumentChanges()) {
+            if (document.getType() == DocumentChange.Type.ADDED) {
+                chatMessages.add(document.getDocument().toObject(ChatMessageModel.class));
+            }
+        }
+        List<ChatMessageModel> chatMessageModels = new ArrayList<>(chatMessages);
+        liveData.setValue(chatMessageModels);
     }
 }

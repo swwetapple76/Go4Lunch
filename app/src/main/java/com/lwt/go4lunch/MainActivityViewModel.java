@@ -86,7 +86,8 @@ public class MainActivityViewModel extends ViewModel {
 
     // WHEN CLICKING ON SEARCH VIEW WE PASSED THE TEXT TO USE CASE AND THEN OBSERVE IT
     public void sendTextToAutocomplete(String text) {
-        LiveData<Predictions> predictionsLiveData = getPredictionsUseCase.invoke(text);
+        String request = text.length() < 2 ? "" : text;
+        LiveData<Predictions> predictionsLiveData = getPredictionsUseCase.invoke(request);
         predictionsMediatorLiveData.addSource(predictionsLiveData, this::combine);
 
     }

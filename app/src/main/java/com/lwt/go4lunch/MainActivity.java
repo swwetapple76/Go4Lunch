@@ -30,6 +30,7 @@ import androidx.fragment.app.FragmentTransaction;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
+import androidx.navigation.fragment.NavHostFragment;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -101,14 +102,14 @@ public class MainActivity extends AppCompatActivity implements
                 R.id.navigation_mapview, R.id.navigation_listview, R.id.navigation_workmates)
                 .setOpenableLayout(drawer)
                 .build();
-        NavController navController = Navigation.findNavController(this,
-                R.id.nav_host_fragment_activity_main);
+        NavHostFragment navHostFragment = (NavHostFragment) getSupportFragmentManager().findFragmentById(R.id.nav_host_fragment_activity_main);
+        NavController navController = navHostFragment.getNavController();
         NavigationUI.setupActionBarWithNavController(this, navController,
                 appBarConfiguration);
         NavigationUI.setupWithNavController(navView, navController);
 
-//        BottomNavigationView bottomNavigationView = findViewById(R.id.nav_view);
-//        bottomNavigationView.setOnItemSelectedListener(mOnNavigationItemSelectedListener);
+        BottomNavigationView bottomNavigationView = findViewById(R.id.nav_view);
+        bottomNavigationView.setOnItemSelectedListener(mOnNavigationItemSelectedListener);
 
         // RECEIVE SINGLE LIVEDATA EVENT FROM VM TO KNOW WHICH ACTION IS REQUIRED FOR PERMISSION
         mainActivityViewModel.getActionSingleLiveEvent().observe(this, action -> {
@@ -135,35 +136,34 @@ public class MainActivity extends AppCompatActivity implements
         configureRecyclerView();
     }
 
-//    private BottomNavigationView.OnItemSelectedListener mOnNavigationItemSelectedListener
-//            = new BottomNavigationView.OnItemSelectedListener() {
-//
-//        @Override
-//        public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-//            switch (item.getItemId()) {
-//                case R.id.navigation_mapview:
-//                    loadFragment(new MapFragment());
-//                    return true;
-//                case R.id.navigation_listview:
-//
-//                    loadFragment(new RestaurantsFragment());
-//                    return true;
-//                case R.id.navigation_workmates:
-//
-//                    loadFragment(new WorkMatesFragment());
-//                    return true;
-//
-//            }
-//            return false;
-//        }
-//    };
-//
-//    private void loadFragment(Fragment fragment) {
-//        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-//        transaction.replace(R.id.nav_host_fragment_activity_main, fragment);
-//        transaction.addToBackStack(null);
-//        transaction.commit();
-//    }
+    private BottomNavigationView.OnItemSelectedListener mOnNavigationItemSelectedListener
+            = new BottomNavigationView.OnItemSelectedListener() {
+
+        @Override
+        public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+            switch (item.getItemId()) {
+                case R.id.navigation_mapview:
+                    loadFragment(new MapFragment());
+                    return true;
+                case R.id.navigation_listview:
+
+                    loadFragment(new RestaurantsFragment());
+                    return true;
+                case R.id.navigation_workmates:
+
+                    loadFragment(new WorkMatesFragment());
+                    return true;
+
+            }
+            return false;
+        }
+    };
+
+    private void loadFragment(Fragment fragment) {
+        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+        transaction.replace(R.id.nav_host_fragment_activity_main, fragment);
+        transaction.commit();
+    }
 
     // HERE WE UPDATE INTERFACE WITH USERS INFORMATION
     private void updateUIWhenCreating() {
@@ -281,8 +281,8 @@ public class MainActivity extends AppCompatActivity implements
 
     @Override
     public boolean onSupportNavigateUp() {
-        NavController navController = Navigation.findNavController(this,
-                R.id.nav_host_fragment_activity_main);
+        NavHostFragment navHostFragment = (NavHostFragment) getSupportFragmentManager().findFragmentById(R.id.nav_host_fragment_activity_main);
+        NavController navController = navHostFragment.getNavController();
         return NavigationUI.navigateUp(navController, appBarConfiguration)
                 || super.onSupportNavigateUp();
 

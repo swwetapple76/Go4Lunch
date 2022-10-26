@@ -13,19 +13,23 @@ import com.lwt.go4lunch.pojo.FavoriteRestaurant;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 public class FavoriteRestaurantsRepository {
 
     public static final String COLLECTION_USERS = "users";
     public static final String COLLECTION_FAVORITE_RESTAURANTS = "favorite restaurants";
 
+    private final FirebaseFirestore db;
+    private final String userId;
+
+    public FavoriteRestaurantsRepository(FirebaseFirestore db, FirebaseAuth auth){
+        this.db = db;
+        this.userId = Objects.requireNonNull(auth.getCurrentUser()).getUid();
+    }
+
     // GET THE FAVORITE RESTAURANTS FOR CURRENT USER
     public LiveData<List<FavoriteRestaurant>> getFavoriteRestaurants() {
-
-        FirebaseFirestore db = FirebaseFirestore.getInstance();
-
-        String userId = FirebaseAuth.getInstance().getCurrentUser().getUid();
-
 
         MutableLiveData<List<FavoriteRestaurant>> favoriteRestaurantsLiveData = new MutableLiveData<>();
 

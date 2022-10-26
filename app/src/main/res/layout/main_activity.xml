@@ -25,7 +25,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <fragment
+        <androidx.fragment.app.FragmentContainerView
             android:id="@+id/nav_host_fragment_activity_main"
             android:name="androidx.navigation.fragment.NavHostFragment"
             android:layout_width="match_parent"
@@ -67,16 +67,24 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <com.google.android.material.navigation.NavigationView
-        android:id="@+id/navigation_view"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_gravity="start"
-        android:background="@color/orange"
-        android:fitsSystemWindows="true"
-        app:menu="@menu/nav_drawer_menu"
-        app:itemIconTint="@color/white"
-        app:itemTextColor="@color/white"
-        app:headerLayout="@layout/navigation_header_main" />
+
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/navigation_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:background="@color/orange"
+            android:fitsSystemWindows="true"
+            app:menu="@menu/nav_drawer_menu"
+            app:itemIconTint="@color/white"
+            app:itemTextColor="@color/white"
+            app:headerLayout="@layout/navigation_header_main" >
+            <ImageView
+                android:layout_width="148dp"
+                android:layout_height="148dp"
+                android:src="@drawable/logo"
+                android:layout_gravity="bottom|center"
+                />
+        </com.google.android.material.navigation.NavigationView>
 
 </androidx.drawerlayout.widget.DrawerLayout>

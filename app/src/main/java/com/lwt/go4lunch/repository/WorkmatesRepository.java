@@ -13,6 +13,7 @@ import com.lwt.go4lunch.model.UserModel;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
+import java.util.Objects;
 import java.util.Set;
 
 public class WorkmatesRepository {
@@ -20,11 +21,16 @@ public class WorkmatesRepository {
     public static final String USERS = "users";
     public static final String USER_NAME = "userName";
 
+    private final FirebaseFirestore db;
+    private final String userId;
+
+    public WorkmatesRepository(FirebaseFirestore db, FirebaseAuth auth){
+        this.db = db;
+        this.userId = Objects.requireNonNull(auth.getCurrentUser()).getUid();
+    }
+
     // GET WORKMATES FROM FIRESTORE DATABASE
     public LiveData<List<UserModel>> getWorkmates() {
-
-        String userId = FirebaseAuth.getInstance().getCurrentUser().getUid();
-        FirebaseFirestore db = FirebaseFirestore.getInstance();
 
         MutableLiveData<List<UserModel>> userModelMutableLiveData = new MutableLiveData<>();
 

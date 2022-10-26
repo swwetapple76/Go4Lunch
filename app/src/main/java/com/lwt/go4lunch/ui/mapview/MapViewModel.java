@@ -4,6 +4,7 @@ import android.location.Location;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.annotation.VisibleForTesting;
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MediatorLiveData;
 import androidx.lifecycle.ViewModel;
@@ -40,14 +41,14 @@ public class MapViewModel extends ViewModel {
                 userSearchRepository.getUsersSearchLiveData();
 
         // OBSERVERS
-        mapViewStatePoiMediatorLiveData.addSource(locationLiveData, location -> combine(
-                nearbySearchResultsLiveData.getValue(),
-                location,
-                workmatesWhoMadeRestaurantChoiceLiveData.getValue(),
-                usersSearchLiveData.getValue()));
         mapViewStatePoiMediatorLiveData.addSource(nearbySearchResultsLiveData, nearbySearchResults -> combine(
                 nearbySearchResults,
                 locationLiveData.getValue(),
+                workmatesWhoMadeRestaurantChoiceLiveData.getValue(),
+                usersSearchLiveData.getValue()));
+        mapViewStatePoiMediatorLiveData.addSource(locationLiveData, location -> combine(
+                nearbySearchResultsLiveData.getValue(),
+                location,
                 workmatesWhoMadeRestaurantChoiceLiveData.getValue(),
                 usersSearchLiveData.getValue()));
         mapViewStatePoiMediatorLiveData.addSource(workmatesWhoMadeRestaurantChoiceLiveData, userWithFavoriteRestaurants -> combine(

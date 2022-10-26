@@ -111,15 +111,15 @@ public class ViewModelFactory implements ViewModelProvider.Factory {
         this.locationRepository =
                 new LocationRepository();
         this.workmatesRepository =
-                new WorkmatesRepository();
+                new WorkmatesRepository(firebaseFirestore, firebaseAuth);
         this.mUserSearchRepository =
                 new UserSearchRepository();
         this.favoriteRestaurantsRepository =
-                new FavoriteRestaurantsRepository();
+                new FavoriteRestaurantsRepository(firebaseFirestore, firebaseAuth);
         this.mUsersWhoMadeRestaurantChoiceRepository =
-                new UsersWhoMadeRestaurantChoiceRepository(Clock.systemDefaultZone());
+                new UsersWhoMadeRestaurantChoiceRepository(firebaseFirestore, Clock.systemDefaultZone());
         this.chatMessageRepository =
-                new ChatMessageRepository();
+                new ChatMessageRepository(firebaseFirestore, firebaseAuth);
         this.notificationsRepository =
                 new NotificationsRepository(context);
 

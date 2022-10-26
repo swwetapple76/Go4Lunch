@@ -5,6 +5,7 @@ import android.util.Log;
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 
+import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.DocumentChange;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.lwt.go4lunch.model.UserWhoMadeRestaurantChoice;
@@ -13,14 +14,16 @@ import java.time.Clock;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 public class UsersWhoMadeRestaurantChoiceRepository {
 
-    private final FirebaseFirestore db = FirebaseFirestore.getInstance();
+    private final FirebaseFirestore db;
     private final Clock clock;
 
-    public UsersWhoMadeRestaurantChoiceRepository(Clock clock) {
+    public UsersWhoMadeRestaurantChoiceRepository(FirebaseFirestore db, Clock clock) {
         this.clock = clock;
+        this.db = db;
     }
 
     // GET WORKMATES WHO DECIDED WHERE THEY WOULD EAT
@@ -34,14 +37,14 @@ public class UsersWhoMadeRestaurantChoiceRepository {
         db.collection(today.toString())
                 .addSnapshotListener((value, error) -> {
                     if (error != null) {
-                        Log.e("restaurant choice error", error.getMessage());
+//                        Log.e("restaurant choice error", error.getMessage());
                         return;
                     }
                     //  List<WorkmateWhoMadeRestaurantChoice> userWithRestaurant = new ArrayList<>();
 
                     assert value != null;
                     for (DocumentChange document : value.getDocumentChanges()) {
-                        Log.d("pipo", "onEvent() called with: value = [" + document.getDocument().toObject(UserWhoMadeRestaurantChoice.class) + "], error = [" + null + "]");
+//                        Log.d("pipo", "onEvent() called with: value = [" + document.getDocument().toObject(UserWhoMadeRestaurantChoice.class) + "], error = [" + null + "]");
                         if (document.getType() == DocumentChange.Type.ADDED) {
 
                             usersWithRestaurant.add(document.getDocument().toObject(UserWhoMadeRestaurantChoice.class));

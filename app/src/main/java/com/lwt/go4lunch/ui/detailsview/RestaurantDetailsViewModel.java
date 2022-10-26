@@ -189,10 +189,12 @@ public class RestaurantDetailsViewModel extends ViewModel {
 
         // CHECK IF THIS RESTAURANT IS IN USERS FAVORITE
         int detailLikeButton = R.drawable.detail_favorite_star_empty;
-        for (int i = 0; i < favoriteRestaurants.size(); i++) {
-            if (favoriteRestaurants.get(i).getRestaurantId().equals(restaurant.getRestaurantId())) {
-                detailLikeButton = R.drawable.details_favorite_star_full;
+        if(favoriteRestaurants != null) {
+            for (int i = 0; i < favoriteRestaurants.size(); i++) {
+                if (favoriteRestaurants.get(i).getRestaurantId().equals(restaurant.getRestaurantId())) {
+                    detailLikeButton = R.drawable.details_favorite_star_full;
 
+                }
             }
         }
 

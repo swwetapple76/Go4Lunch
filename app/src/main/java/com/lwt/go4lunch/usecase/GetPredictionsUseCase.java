@@ -1,5 +1,7 @@
 package com.lwt.go4lunch.usecase;
 
+import android.util.Log;
+
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.Transformations;
 
@@ -25,6 +27,10 @@ public class GetPredictionsUseCase {
     public LiveData<Predictions> invoke(String text) {
         return Transformations.switchMap(locationRepository.getLocationLiveData(), input -> {
             String locationAsText = input.getLatitude() + "," + input.getLongitude();
+            Log.i("go4lunch", "location: " + locationAsText);
+            if(text.length() < 2){
+
+            }
             return Transformations.map(autocompleteRepository.getAutocompleteResultListLiveData(
                     locationAsText,
                     text),

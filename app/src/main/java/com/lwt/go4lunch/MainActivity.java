@@ -136,7 +136,7 @@ public class MainActivity extends AppCompatActivity implements
         configureRecyclerView();
     }
 
-    private BottomNavigationView.OnItemSelectedListener mOnNavigationItemSelectedListener
+    private final BottomNavigationView.OnItemSelectedListener mOnNavigationItemSelectedListener
             = new BottomNavigationView.OnItemSelectedListener() {
 
         @Override

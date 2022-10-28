@@ -35,10 +35,6 @@
     <string name="auth_logo">Logo</string>
     <string name="auth_description">trouvez un restaurant et invitez vos collègues !</string>
 
-    <!-- USED BY FACEBOOK AUTH -->
-    <string name="facebook_application_id">303261874567043</string>
-    <string name="fb_login_protocol_scheme">fb303261874567043</string>
-
     <!-- USED IN NAVIGATION DRAWER -->
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>

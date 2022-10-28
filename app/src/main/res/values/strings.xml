@@ -38,8 +38,8 @@
     <string name="auth_description">find a nice restaurant and invite your co-workers for lunch !</string>
 
     <!-- USED BY FACEBOOK AUTH -->
-    <string name="facebook_application_id">545622527093272</string>
-    <string name="fb_login_protocol_scheme">fb545622527093272</string>
+    <string name="facebook_application_id" translatable="false">6298808430146059</string>
+    <string name="fb_login_protocol_scheme" translatable="false">fb6298808430146059</string>
     <string name="facebook_client_token" translatable="false">5a685f9f3ad7d4fc9c2326196a03eb3a</string>
 
     <!-- USED IN NAVIGATION DRAWER -->

@@ -35,6 +35,7 @@ import com.lwt.go4lunch.usecase.GetCurrentUserIdUseCase;
 import com.lwt.go4lunch.usecase.GetNearbySearchResultsByIdUseCase;
 import com.lwt.go4lunch.usecase.GetRestaurantDetailsResultsByIdUseCase;
 
+import org.junit.After;
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
@@ -63,29 +64,36 @@ public class RestaurantDetailsViewModelTest {
     @Mock ClickOnChoseRestaurantButtonUseCase clickOnChoseRestaurantButtonUseCase;
     @Mock ClickOnFavoriteRestaurantUseCase clickOnFavoriteRestaurantUseCase;
 
+    MockedStatic<Color> color;
+
     RestaurantDetailsViewModel viewModel;
+
+
 
     @Before
     public void setUp() throws Exception {
         viewModel = new RestaurantDetailsViewModel(application, getNearbySearchResultsByIdUseCase, getRestaurantDetailsResultsByIdUseCase,
                 mUsersWhoMadeRestaurantChoiceRepository, workmatesRepository, favoriteRestaurantsRepository, getCurrentUserIdUseCase,
                 clickOnChoseRestaurantButtonUseCase, clickOnFavoriteRestaurantUseCase);
-    }
 
-    @Test
-    public void init() {
-        when(application.getString(R.string.background_black)).thenReturn("#000000");
-        when(application.getString(R.string.background_green)).thenReturn("#69F0AE");
-        when(application.getString(R.string.api_url)).thenReturn("https://maps.googleapis.com/maps/api/place");
-        when(application.getString(R.string.and_key)).thenReturn("&key=");
-        when(application.getString(R.string.phone_number_unavailable)).thenReturn("Phone number unavailable");
-        when(application.getString(R.string.website_unavailable)).thenReturn("https://www.google.com/");
-        when(application.getString(R.string.photo_reference)).thenReturn("photo?maxwidth=300&photo_reference=");
-        when(application.getString(R.string.is_joining)).thenReturn("is joining !");
-
-        MockedStatic<Color> color = Mockito.mockStatic(Color.class);
+        color = Mockito.mockStatic(Color.class);
         color.when(() -> Color.parseColor("#000000")).thenReturn(0);
         color.when(() -> Color.parseColor("#69F0AE")).thenReturn(0);
+    }
+    @After
+    public void tearDown(){
+        color.close();
+    }
+
+    public void init() {
+        when(application.getString(R.string.background_black)).thenReturn("#000000");
+//        when(application.getString(R.string.background_green)).thenReturn("#69F0AE");
+        when(application.getString(R.string.api_url)).thenReturn("https://maps.googleapis.com/maps/api/place");
+        when(application.getString(R.string.and_key)).thenReturn("&key=");
+//        when(application.getString(R.string.phone_number_unavailable)).thenReturn("Phone number unavailable");
+//        when(application.getString(R.string.website_unavailable)).thenReturn("https://www.google.com/");
+        when(application.getString(R.string.photo_reference)).thenReturn("photo?maxwidth=300&photo_reference=");
+        when(application.getString(R.string.is_joining)).thenReturn("is joining !");
 
         String placeId = "0";
 

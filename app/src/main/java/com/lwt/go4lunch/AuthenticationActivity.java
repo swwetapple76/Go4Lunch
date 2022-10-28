@@ -19,6 +19,7 @@ import com.lwt.go4lunch.databinding.AuthenticationBinding;
 import com.lwt.go4lunch.model.UserModel;
 import com.lwt.go4lunch.usecase.GetCurrentUserUseCase;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -69,10 +70,13 @@ public class AuthenticationActivity extends BaseActivity<AuthenticationBinding> 
 
     // auth methods
     private void startSignInActivity() {
+        List<String> facebookPermissions = new ArrayList<>();
+        facebookPermissions.add("email");
+        facebookPermissions.add("public_profile");
         //Choose auth providers
         List<AuthUI.IdpConfig> providers = Arrays.asList(
                 new AuthUI.IdpConfig.GoogleBuilder().build(),
-                new AuthUI.IdpConfig.FacebookBuilder().build());
+                new AuthUI.IdpConfig.FacebookBuilder().setPermissions(facebookPermissions).build());
 
 
         // Launch activity

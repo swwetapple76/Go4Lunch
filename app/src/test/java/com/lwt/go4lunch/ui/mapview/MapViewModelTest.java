@@ -52,7 +52,7 @@ public class MapViewModelTest {
     @Test
     public void getMapViewStateLiveData() throws InterruptedException {
         when(location.getLatitude()).thenReturn(0.0);
-        when(location.getAltitude()).thenReturn(0.0);
+//        when(location.getAltitude()).thenReturn(0.0);
         when(locationRepository.getLocationLiveData()).thenReturn(new MutableLiveData<>(location));
 
         List<Restaurant> restaurants = new ArrayList<>();

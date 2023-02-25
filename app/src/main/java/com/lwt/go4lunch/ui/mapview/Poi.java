@@ -14,13 +14,15 @@ public class Poi {
     private final String poiAddress;
     private final LatLng poiLatLng;
     private final boolean isFavorite;
+    private final boolean isSearchResult;
 
-    public Poi(String poiName, String poiPlaceId, String poiAddress, LatLng poiLatLng, boolean isFavorite) {
+    public Poi(String poiName, String poiPlaceId, String poiAddress, LatLng poiLatLng, boolean isFavorite, boolean isSearchResult) {
         this.poiName = poiName;
         this.poiPlaceId = poiPlaceId;
         this.poiAddress = poiAddress;
         this.poiLatLng = poiLatLng;
         this.isFavorite = isFavorite;
+        this.isSearchResult = isSearchResult;
     }
 
     public String getPoiName() {
@@ -40,6 +42,7 @@ public class Poi {
     }
 
     public boolean getIsFavorite() { return isFavorite; }
+    public boolean getIsSearchResult() { return isSearchResult; }
 
     @Override
     public boolean equals(Object o) {
@@ -60,7 +63,8 @@ public class Poi {
                 poiPlaceId,
                 poiAddress,
                 poiLatLng,
-                isFavorite);
+                isFavorite,
+                isSearchResult);
     }
 
     @NonNull
@@ -72,6 +76,7 @@ public class Poi {
                 ", poiAddress='" + poiAddress + '\'' +
                 ", poiLatLng=" + poiLatLng +
                 ", isFavorite=" + isFavorite +
+                ", isSearchResult=" + isSearchResult +
                 '}';
     }
 }

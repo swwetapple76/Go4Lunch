@@ -14,6 +14,7 @@ import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.CameraPosition;
+import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.lwt.go4lunch.R;
@@ -55,10 +56,16 @@ public class MapFragment extends SupportMapFragment implements OnMapReadyCallbac
                 // ZOOM IN, ANIMATE CAMERA
                 googleMap.animateCamera(CameraUpdateFactory.zoomIn());
 
+                boolean isUserSearch = false;
+                if(!mapViewState.getPoiList().isEmpty()){
+                    isUserSearch = mapViewState.getPoiList().get(0).getIsSearchResult();
+                }
+                LatLng latLng = isUserSearch ? mapViewState.getPoiList().get(0).getPoiLatLng() : mapViewState.getLatLng();
+
                 // CAMERA POSITION
                 CameraPosition cameraPosition = new CameraPosition.Builder()
-                        .target(mapViewState.getLatLng())      // Sets the center of the map to Mountain View
-                        .zoom(17)                   // Sets the zoom
+                        .target(latLng)      // Sets the center of the map to Mountain View
+                        .zoom(16)                   // Sets the zoom
                         .bearing(90)                // Sets the orientation of the camera to east
                         .tilt(30)                   // Sets the tilt of the camera to 30 degrees
                         .build();                   // Creates a CameraPosition from the builder

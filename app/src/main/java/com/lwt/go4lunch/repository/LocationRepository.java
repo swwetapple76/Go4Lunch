@@ -13,6 +13,7 @@ import com.google.android.gms.location.LocationCallback;
 import com.google.android.gms.location.LocationRequest;
 import com.google.android.gms.location.LocationResult;
 import com.google.android.gms.location.LocationServices;
+import com.google.android.gms.location.Priority;
 import com.lwt.go4lunch.MainApplication;
 
 public class LocationRepository {
@@ -35,7 +36,7 @@ public class LocationRepository {
             };
             LocationServices.getFusedLocationProviderClient(MainApplication.getApplication()).requestLocationUpdates(
                     LocationRequest.create()
-                            .setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY)
+                            .setPriority(Priority. PRIORITY_HIGH_ACCURACY)
                             .setInterval(DEFAULT_UPDATE_INTERVAL)
                             .setFastestInterval(FASTEST_UPDATE_INTERVAL)
                             .setSmallestDisplacement(50),

@@ -131,7 +131,8 @@ public class MapViewModel extends ViewModel {
                                 poiPlaceId,
                                 poiAddress,
                                 latLng,
-                                isFavorite
+                                isFavorite,
+                                !usersSearch.isEmpty()
                         )
                 );
             }
@@ -195,7 +196,8 @@ public class MapViewModel extends ViewModel {
                             poiPlaceId,
                             poiAddress,
                             latLng,
-                            isFavorite
+                            isFavorite,
+                            false
                     )
             );
 

@@ -136,7 +136,7 @@ public class MainActivity extends AppCompatActivity implements
         configureRecyclerView();
     }
 
-    private final BottomNavigationView.OnItemSelectedListener mOnNavigationItemSelectedListener
+    private BottomNavigationView.OnItemSelectedListener mOnNavigationItemSelectedListener
             = new BottomNavigationView.OnItemSelectedListener() {
 
         @Override
@@ -144,14 +144,17 @@ public class MainActivity extends AppCompatActivity implements
             switch (item.getItemId()) {
                 case R.id.navigation_mapview:
                     loadFragment(new MapFragment());
+                    toolbar.setTitle("Map View");
                     return true;
                 case R.id.navigation_listview:
 
                     loadFragment(new RestaurantsFragment());
+                    toolbar.setTitle("List View");
                     return true;
                 case R.id.navigation_workmates:
 
                     loadFragment(new WorkMatesFragment());
+                    toolbar.setTitle("Workmates View");
                     return true;
 
             }

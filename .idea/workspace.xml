@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="10f814cd-7db7-488f-9718-f3904d067705" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/deploymentTargetDropDown.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/google-services.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/google-services.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/proguard-rules.pro" beforeDir="false" afterPath="$PROJECT_DIR$/app/proguard-rules.pro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/androidTest/java/com/lwt/go4lunch/ExampleInstrumentedTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/androidTest/java/com/lwt/go4lunch/ExampleInstrumentedTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/AuthenticationActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/AuthenticationActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/BaseActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/BaseActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/MainActivityViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/MainActivityViewModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/MainActivityYourLunchViewState.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/MainActivityYourLunchViewState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/MainApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/MainApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/di/ViewModelFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/di/ViewModelFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/model/ChatMessageModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/model/ChatMessageModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/model/DaysModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/model/DaysModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/model/UserModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/model/UserModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/model/UserWhoMadeRestaurantChoice.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/model/UserWhoMadeRestaurantChoice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/pojo/Close.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/pojo/Close.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/pojo/FavoriteRestaurant.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/pojo/FavoriteRestaurant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/pojo/Geometry.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/pojo/Geometry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/pojo/NearbySearchResults.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/pojo/NearbySearchResults.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/pojo/Open.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/pojo/Open.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/pojo/OpeningHours.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/pojo/OpeningHours.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/pojo/Periods.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/pojo/Periods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/pojo/Photo.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/pojo/Photo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/pojo/PlaceAutocompleteStructuredFormat.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/pojo/PlaceAutocompleteStructuredFormat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/pojo/Prediction.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/pojo/Prediction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/pojo/Predictions.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/pojo/Predictions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/pojo/Restaurant.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/pojo/Restaurant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/pojo/RestaurantDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/pojo/RestaurantDetails.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/pojo/RestaurantDetailsResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/pojo/RestaurantDetailsResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/pojo/RestaurantLatLngLiteral.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/pojo/RestaurantLatLngLiteral.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/pojo/SearchViewResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/pojo/SearchViewResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/repository/AutocompleteRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/repository/AutocompleteRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/repository/ChatMessageRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/repository/ChatMessageRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/repository/FavoriteRestaurantsRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/repository/FavoriteRestaurantsRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/repository/LocationRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/repository/LocationRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/repository/NearbySearchResponseRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/repository/NearbySearchResponseRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/repository/NotificationsRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/repository/NotificationsRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/repository/RestaurantDetailsResponseRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/repository/RestaurantDetailsResponseRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/repository/UserSearchRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/repository/UserSearchRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/repository/UsersWhoMadeRestaurantChoiceRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/repository/UsersWhoMadeRestaurantChoiceRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/repository/WorkmatesRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/repository/WorkmatesRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/retrofit/GoogleMapsApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/retrofit/GoogleMapsApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/ui/autocomplete/PredictionViewState.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/ui/autocomplete/PredictionViewState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/ui/autocomplete/PredictionsAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/ui/autocomplete/PredictionsAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/ui/chat/ChatActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/ui/chat/ChatActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/ui/chat/ChatAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/ui/chat/ChatAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/ui/chat/ChatViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/ui/chat/ChatViewModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/ui/chat/ChatViewState.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/ui/chat/ChatViewState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/ui/detailsview/RestaurantDetailsActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/ui/detailsview/RestaurantDetailsActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/ui/detailsview/RestaurantDetailsRecyclerViewAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/ui/detailsview/RestaurantDetailsRecyclerViewAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/ui/detailsview/RestaurantDetailsViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/ui/detailsview/RestaurantDetailsViewModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/ui/detailsview/RestaurantDetailsViewState.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/ui/detailsview/RestaurantDetailsViewState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/ui/detailsview/RestaurantDetailsWorkmatesViewState.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/ui/detailsview/RestaurantDetailsWorkmatesViewState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/ui/mapview/MapFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/ui/mapview/MapFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/ui/mapview/MapViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/ui/mapview/MapViewModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/ui/mapview/MapViewState.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/ui/mapview/MapViewState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/ui/mapview/Poi.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/ui/mapview/Poi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/ui/restaurants/RestaurantsFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/ui/restaurants/RestaurantsFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/ui/restaurants/RestaurantsRecyclerViewAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/ui/restaurants/RestaurantsRecyclerViewAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/ui/restaurants/RestaurantsViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/ui/restaurants/RestaurantsViewModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/ui/restaurants/RestaurantsViewState.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/ui/restaurants/RestaurantsViewState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/ui/restaurants/RestaurantsWrapperViewState.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/ui/restaurants/RestaurantsWrapperViewState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/ui/setting/SettingActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/ui/setting/SettingActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/ui/setting/SettingViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/ui/setting/SettingViewModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/ui/workmates/WorkMateViewState.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/ui/workmates/WorkMateViewState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/ui/workmates/WorkMatesFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/ui/workmates/WorkMatesFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/ui/workmates/WorkMatesRecyclerViewAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/ui/workmates/WorkMatesRecyclerViewAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/ui/workmates/WorkMatesViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/ui/workmates/WorkMatesViewModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/usecase/AddChatMessageToFirestoreUseCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/usecase/AddChatMessageToFirestoreUseCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/usecase/ClickOnChoseRestaurantButtonUseCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/usecase/ClickOnChoseRestaurantButtonUseCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/usecase/ClickOnFavoriteRestaurantUseCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/usecase/ClickOnFavoriteRestaurantUseCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/usecase/GetCurrentUserIdUseCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/usecase/GetCurrentUserIdUseCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/usecase/GetCurrentUserUseCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/usecase/GetCurrentUserUseCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/usecase/GetNearbySearchResultsByIdUseCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/usecase/GetNearbySearchResultsByIdUseCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/usecase/GetNearbySearchResultsUseCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/usecase/GetNearbySearchResultsUseCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/usecase/GetPredictionsUseCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/usecase/GetPredictionsUseCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/usecase/GetRestaurantDetailsResultsByIdUseCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/usecase/GetRestaurantDetailsResultsByIdUseCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/usecase/GetRestaurantDetailsResultsUseCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/usecase/GetRestaurantDetailsResultsUseCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/util/PermissionsViewAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/util/PermissionsViewAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/util/SingleLiveEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/util/SingleLiveEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/util/SvgToBitmapConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/util/SvgToBitmapConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/workmanager/UploadWorker.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/lwt/go4lunch/workmanager/UploadWorker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/back_arrow.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/back_arrow.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/call_icon.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/call_icon.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/chat_incoming_message_background.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/chat_incoming_message_background.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/chat_outgoing_message_background.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/chat_outgoing_message_background.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/connexion_button_radius.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/connexion_button_radius.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/detail_favorite_star_empty.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/detail_favorite_star_empty.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/details_favorite_star_full.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/details_favorite_star_full.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/has_decided.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/has_decided.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/has_not_decided.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/has_not_decided.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_baseline_directions_walk_24.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_baseline_directions_walk_24.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_baseline_person_24.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_baseline_person_24.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_baseline_public_24.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_baseline_public_24.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_baseline_send_24.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_baseline_send_24.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_bol.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_bol.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_launcher_background.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/listview.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/listview.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/listview_star.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/listview_star.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/logout_icon.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/logout_icon.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/lunch_icon.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/lunch_icon.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/mapview.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/mapview.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/restaurant_poi_icon_green.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/restaurant_poi_icon_green.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/restaurant_poi_icon_red.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/restaurant_poi_icon_red.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/round_button.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/round_button.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/search.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/search.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/search_icon.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/search_icon.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/settings_icon.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/settings_icon.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/tab_color.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/tab_color.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/workmate_icon.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/workmate_icon.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/workmates.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/workmates.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/your_lunch_icon.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/your_lunch_icon.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/authentication.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/authentication.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/authentication1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/authentication1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/chat_activity.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/chat_activity.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_chat_incoming.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_chat_incoming.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_chat_outgoing.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_chat_outgoing.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_prediction.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_prediction.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_restaurant.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_restaurant.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_workmate.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_workmate.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/main_activity.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/main_activity.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/map_fragment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/map_fragment.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/navigation_header_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/navigation_header_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/recyclerview_restaurants.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/recyclerview_restaurants.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/recyclerview_workmates.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/recyclerview_workmates.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/restaurant_details.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/restaurant_details.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/settings_activity.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/settings_activity.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/toolbar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/toolbar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/menu/bottom_nav_menu.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/menu/bottom_nav_menu.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/menu/nav_drawer_menu.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/menu/nav_drawer_menu.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/menu/search_menu.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/menu/search_menu.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/navigation/mobile_navigation.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/navigation/mobile_navigation.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values-fr/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values-fr/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values-night/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values-night/themes.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/themes.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/xml/backup_rules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/xml/backup_rules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/xml/data_extraction_rules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/xml/data_extraction_rules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/xml/searchable_configuration.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/xml/searchable_configuration.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/test/java/com/lwt/go4lunch/GoogleMapApiMock.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/com/lwt/go4lunch/GoogleMapApiMock.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/test/java/com/lwt/go4lunch/LiveDataTestUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/com/lwt/go4lunch/LiveDataTestUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/test/java/com/lwt/go4lunch/repository/AutocompleteRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/com/lwt/go4lunch/repository/AutocompleteRepositoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/test/java/com/lwt/go4lunch/repository/ChatMessageRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/com/lwt/go4lunch/repository/ChatMessageRepositoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/test/java/com/lwt/go4lunch/repository/FavoriteRestaurantsRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/com/lwt/go4lunch/repository/FavoriteRestaurantsRepositoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/test/java/com/lwt/go4lunch/repository/NearbySearchResponseRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/com/lwt/go4lunch/repository/NearbySearchResponseRepositoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/test/java/com/lwt/go4lunch/repository/NotificationsRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/com/lwt/go4lunch/repository/NotificationsRepositoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/test/java/com/lwt/go4lunch/repository/RestaurantDetailsResponseRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/com/lwt/go4lunch/repository/RestaurantDetailsResponseRepositoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/test/java/com/lwt/go4lunch/repository/UsersWhoMadeRestaurantChoiceRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/com/lwt/go4lunch/repository/UsersWhoMadeRestaurantChoiceRepositoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/test/java/com/lwt/go4lunch/repository/WorkmatesRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/com/lwt/go4lunch/repository/WorkmatesRepositoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/test/java/com/lwt/go4lunch/ui/chat/ChatViewModelTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/com/lwt/go4lunch/ui/chat/ChatViewModelTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/test/java/com/lwt/go4lunch/ui/detailsview/RestaurantDetailsViewModelTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/com/lwt/go4lunch/ui/detailsview/RestaurantDetailsViewModelTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/test/java/com/lwt/go4lunch/ui/mapview/MapViewModelTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/com/lwt/go4lunch/ui/mapview/MapViewModelTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshot/chat.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshot/details.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshot/go4lunch.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshot/listView.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshot/mapView.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshot/navDrawer.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshot/workmate.png" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[52bbd6fc7d94]" />
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Go4Lunch" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2HJLQBafF0KCtULP2qfNRIltCjS" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
+    <property name="cidr.known.project.marker" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="gradle signReport" />
+    </option>
+  </component>
+  <component name="RunManager" selected="Android App.app">
+    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
+      <module name="Go4Lunch.app.main" />
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ALL_USERS" value="false" />
+      <option name="ALWAYS_INSTALL_WITH_PM" value="false" />
+      <option name="CLEAR_APP_STORAGE" value="false" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="INSPECTION_WITHOUT_ACTIVITY_RESTART" value="false" />
+      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Hybrid>
+      <Java />
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Java/Kotlin Method Sample (legacy)" />
+        <option name="STARTUP_NATIVE_MEMORY_PROFILING_ENABLED" value="false" />
+        <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
+        <option name="PROFILING_MODE" value="NOT_SET" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
+      <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Go4Lunch [signReport]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="signReport" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.Go4Lunch [signReport]" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="10f814cd-7db7-488f-9718-f3904d067705" name="Changes" comment="" />
+      <created>1667998227235</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1667998227235</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
